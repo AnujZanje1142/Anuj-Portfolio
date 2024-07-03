@@ -741,7 +741,7 @@ FOOTER
 
 */
 
-/*footer {
+.footer {
     width: 100vw;
     max-width: 100vw;
     height: auto;
@@ -755,7 +755,7 @@ FOOTER
     color: black;
     align-items: center;
     padding: 0.5rem;
-} */
+} 
 
 .current-song {
     display: flex;
