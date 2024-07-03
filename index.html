@@ -1,0 +1,758 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; user-scalable=0; initial-scale=0.9" />
+
+    <title>Anuj Zanje</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="icon" href="Images/anuj.png">
+</head>
+<body>
+
+    <!-- DROPDOWN MENU -->
+    <div id="dropdown" class="dropdown-menu">
+        <!-- Contact me Container -->
+        <div class="spotify-container">
+            <h1>Contact Me</h1>
+            <div id="spotify-menu" class="spotify-playlists">
+                <a href="https://www.linkedin.com/in/anuj-zanje-281714236/" target=”_blank”>
+                    <div>
+                        <img src="Images/linkedin-icon.png">
+                        <h2>LinkedIn</h2>
+                    </div>
+                </a>
+           <a href="https://github.com/AnujZanje1142">
+                    <div>
+                        <img src="Images/github-icon.png">
+                        <h2>Github</h2>
+                    </div>
+             </a>
+                
+                <a href=mailto:"anujzanje@gamuil.com" target=”_blank”>
+                    <div>
+                        <img src="Images/email-icon.png">
+                        <h2>Email</h2>
+                    </div>
+                </a>
+                <a href="Anuj_Zanje_Resume_26-07-2023-20-13-27.pdf" target=”_blank”>
+                    <div>
+                        <img src="Images/resume-icon.png">
+                        <h2>Resume</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- SPOTIFY CONTAINER -->
+      
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2ONM44eYiDhx1hetnhXviU?utm_source=generator" width="96%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+
+
+    <!-- LEFT MENU THINGS  -->
+    <div class="left-menu">
+        
+    
+
+        <div class="top-container">
+            <div onclick="dropdownMenu()" id="dropdown-menu-button" class="dropdown">
+                <img src="Images/dropdown-icon.png">
+            </div>
+            <div onclick="returnHome()"class="home">
+                <img src="https://uploads-ssl.webflow.com/6156d79b685c2b652cd52eb9/6158155fd68240aa253e5aaa_home-grey.svg">
+                <h3> Home </h3>
+            </div>
+            
+            <div class="search">
+                
+                <img src="Images/whatsapp.png">
+                
+                <div id="contact_me"><a href="https://wa.me/919624479810" target="_blank">Contact Me</a><i class="fa-brands fa-whatsapp"></i> </div>
+               
+              
+            </div>
+        </div>
+
+            <!-- BOTTOM LEFT CONTAINER -->
+        <div class="left-menu-container">
+
+            <!-- Contact me Container -->
+            <div class="spotify-container">
+                <h1>Contact Me</h1>
+                <div id="spotify-menu" class="spotify-playlists">
+                    <a href="https://www.linkedin.com/in/anuj-zanje-281714236/" target=”_blank”>
+                        <div>
+                            <img src="Images/linkedin-icon.png">
+                            <h2>LinkedIn</h2>
+                        </div>
+                    </a>
+                    <a href="https://github.com/AnujZanje1142">
+                        <div>
+                            <img src="Images/github-icon.png">
+                            <h2>Github</h2>
+                        </div>
+                    </a>
+                    
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=anujzanje@gmail.com" target=”_blank”>
+                        <div>
+                            <img src="Images/email-icon.png">
+                            <h2>Email</h2>
+                        </div>
+                    </a>
+                    <a href="Anuj_Zanje_Resume_26-07-2023-20-13-27.pdf" target=”_blank”>
+                        <div>
+                            <img src="Images/resume-icon.png">
+                            <h2>Resume</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+     
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2ONM44eYiDhx1hetnhXviU?utm_source=generator" width="96%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </div>
+
+
+
+    <!-- HOME SCREEN CONTAINER -->
+    <div id="home-container" class="main-container">
+        <div class="right-menu">
+            
+            <!-- Header -->
+            <div class="header">
+                <div class="forward-backward">
+                    <div onclick="returnHome()">
+                        <button><img class="backward-button" src="Images/pointing-arrow.png"></button>
+                    </div>
+                    <button><img class="forward-button" src="Images/pointing-arrow.png"></button>
+                </div>
+                <div class="profile">
+                    <img>
+                    <h2>Anuj</h2>
+                    <button> ^ </button>
+                </div>
+            </div>
+
+
+
+            <!-- Banner -->
+            <div class="banner">
+                <div class="banner-img">
+                    <h1 class="banner-text" img src="images/anuj.png">Welcome to my portfolio🙋‍♂️.</h1>
+                </div>
+            </div>
+
+
+
+            <!-- Greeting Message -->
+            <h1 id="greeting-message" class="greeting-message" >Javascript Pog</h1>
+
+
+
+            <!-- First Playlist Section -->
+            <div id="playlist-container" class="playlist-container">
+                <div class="playlist" onclick="HidingContainers('about-me-container');">
+                    <img src="Images/anuj.png">
+                    <div class="playlist-name">
+                        <h1>About Me</h1>    
+                    </div>
+                </div>
+                <div class="playlist" onclick="HidingContainers('section-two-container');">
+                    <img src="Images/working.png">
+                    <div class="playlist-name">
+                        <h1>Github Project</h1>    
+                    </div>
+                </div>
+                <div class="playlist" onclick="HidingContainers('contact-me-container');">
+                    <img src="Images/coding-icon.avif">
+                    <div class="playlist-name">
+                        <h1>Coding Goals</h1>    
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Greeting Message -->
+            <h1 class="greeting-message">Projects</h1>
+
+
+
+            <!-- PROJECTS -->
+            <div id="playlist-container" class="playlist-container">
+                
+                <div class="playlist" onclick="HidingContainers('firesafe-container')">
+                    <img src="Images/shop.png">
+                    <div class="playlist-name">
+                        <h1>Online Grocery Store</h1>    
+                    </div>
+                </div>
+                <div class="playlist" onclick="HidingContainers('froggy-jumper-container')">
+                    <img src="Images/images-removebg-preview (1).png">
+                    <div class="playlist-name">
+                        <h1>Online Movie</h1>    
+                    </div>
+                </div>
+                <div class="playlist" onclick="HidingContainers('spotify-portfolio-container')">
+                    <img id="playlist-six-image" src="Images/website-logo.png">
+                    <div class="playlist-name">
+                        <h1 id="playlist-six-text">Spotify Portfolio</h1>    
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Lower Section Title -->
+            <h1 id="tech-tools-title" class="tech-tools-title">Tools and Tech</h1>
+
+
+
+            <!-- Tools and Tech -->
+            <div id="tech-tools"class="genre-container">
+                
+                <div class="genre">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                    <h2>Javascript</h2>
+                    
+                </div>
+                <div class="genre">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                    <h2>Python</h2>
+                    
+                </div>
+                <div class="genre">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                    <h2>CSS</h2>
+                    
+                </div>
+                <div class="genre">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                    <h2>HTML</h2>
+                    
+                </div>
+                <div class="genre">
+                    <img src="Images/mysql-database-web-development-computer-software-dolphin-removebg-preview.png">
+                    <h2>SQL</h2>
+                    
+                </div>
+                
+                
+                <div class="genre">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                    <h2>Bootstrap</h2>
+                    
+                </div>
+                <div class="genre">
+                    <img src="images/images-removebg-preview.png">
+                    <h2> Phtoshop</h2>
+                    
+                </div>
+                <div class="genre">
+                    <img style="border-radius: 0.5rem" src="Images/github-icon.png"/>
+                    <h2>Github</h2>
+                    
+                </div>
+                <div class="genre">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+                    <h2>Git</h2>
+                    
+                </div>
+                <div class="genre">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+                    <h2>Vscode</h2>
+                    
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- ALL FOOTER THINGS -->
+    <footer class="footer">
+
+        <!-- CURRENT SONG IMG/TEXT -->
+        <div class="current-song">
+            <img class="current-album" src="Images/waving-wave.gif">
+            <div class="song-info">
+                <h2> Personal Portfolio - Spotify Version </h2>
+                <h3> Anuj Zanje</h3>
+            </div>
+            <img onclick="heartCheckbox()" id="grey-heart" class="grey-heart" src="https://uploads-ssl.webflow.com/6156d79b685c2b652cd52eb9/6157946790f93e5264dd3dc9_heart-grey.svg">
+            <img onclick="heartCheckbox()" id="red-heart" class="red-heart" src="Images/heart-removebg-preview.png " >
+        </div>
+
+       
+       
+        <!-- RIGHT SIDE VOLUME SLIDER -->
+        <div class="volume-div">
+            <div class="volume"></div>
+            <div class="volume-button"></div>
+        </div>
+
+    </footer>
+
+
+
+    <!-- ABOUT ME CONTAINER-->
+    <div id="about-me-container" class="about-me">
+        <div class="right-menu">
+            
+            <!-- Header -->
+            <div class="header">
+                <div class="forward-backward">
+                    
+                    <button onclick="returnHome()"><img class="backward-button" src="Images/pointing-arrow.png"></button>
+                    <button><img class="forward-button" src="Images/pointing-arrow.png"></button>
+                </div>
+                <div class="profile">
+                    <img>
+                    <h2>Anuj</h2>
+                    <button> ^ </button>
+                </div>
+            </div>
+            
+            <!-- Banner -->
+            <!-- <div class="banner">
+                <img src="Images/froggy-banner-3.jpeg">
+            </div> -->
+            
+            <!-- Title -->
+            <div class="image-and-title">
+                <img src="Images/out-0 (1).png">
+                <div class="image-and-title-text">
+                    <h1>About Me</h1>
+                    <h3>29th March 2004</h3>
+                </div>
+            </div>
+            
+            <!-- Text Area -->
+            <div class="about-me-info">
+                <h1>Hello and Thanks for checking out my site!</h1>
+                <h2>My name is Anuj Zanje </h2>
+            
+                <div>
+                    <h3>Born and raised in Ahmedabad , India</h3>
+                    <h3>I am going into my 3rd year studying Computer Application at the Slievr Oak University</h3>
+                    <h3>I do lots of web developement in my free time creating cool looking website clones of well known companies such as the one you are viewing right now, <b>Spotify!</b></h3>
+                    <h3>Hope you enjoy checking out my site as much as I did creating it!</h3>
+                    <h3>Tap the heart on the footer to let me know if I did a good job!</h3>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+
+    <!-- WORK EXPERIENCE CONTAINER-->
+    <div id="section-two-container" class="section-two">
+        <div class="right-menu">
+            
+            <!-- Header -->
+            <div class="header">
+                <div class="forward-backward">
+                    
+                    <button onclick="returnHome()"><img class="backward-button" src="Images/pointing-arrow.png"></button>
+                    <button><img class="forward-button" src="Images/pointing-arrow.png"></button>
+                </div>
+                <div class="profile">
+                    <img>
+                    <h2>Anuj</h2>
+                    <button> ^ </button>
+                </div>
+            </div>
+            
+            <!-- Banner -->
+            <!-- <div class="banner">
+                <img src="Images/froggy-banner-3.jpeg">
+            </div> -->
+            
+            <!-- Title -->
+            <div class="image-and-title">
+                <img src="Images/out-0 (2).png">
+                <div class="image-and-title-text">
+                    <h1>Github project</h1>
+                    <!-- <h3>Something Here</h3> -->
+                </div>
+            </div>
+            <div class="card-container">
+                <div  class="card">
+                    <h2>ml-papers <span class="public">Public</span></h2>
+                    
+                    <a href="https://github.com/AnujZanje1142/python-Quiz-">"python-Quiz"</a>
+                  
+                    <div class="details">
+                        <span>🔵 Python</span>
+                        <span>⭐ 65</span> 
+                        <span>🔗 12</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>URL shortner <span class="public">Public</span></h2>
+                    <p> </p>
+                    <a href="https://github.com/AnujZanje1142/CodeClauseInternship_URLshortener">CodeClauseInternship_URLshortene</a>
+                    <div class="details">
+                        <span>🔵 Python </span>
+                        <span>⭐ 177</span>
+                        <span>🔗 71</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>Music Player<span class="public">Public</span></h2>
+                    </p>
+                    <a href="https://github.com/AnujZanje1142/CodeClauseInternship_MusicPlayerusingPyhton">MusicPlayerusingPyhton 🐍</a>
+                    <div class="details">
+                        <span>🔵 Python</span>
+                        <span>⭐ 15</span>
+                        <span>🔗 1</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>Library-Management-System <span class="public">Public</span></h2>
+                   <a href="https://github.com/AnujZanje1142/Library-Management-System-">Library-Management-System</a>
+                    <div class="details">
+                        <span>🔵Python & SQL,<br> Flask</span>
+                        <span>⭐ 88</span>
+                        <span>🔗 13</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>Movie Clone  <span class="public">Public</span></h2>
+                    <p></p>
+                    <a href="https://github.com/AnujZanje1142/Sem5">Movie Clone</a>
+
+                    <div class="details">
+                        <span>🔴HTMl,CSS and JS</span>
+                        <span>⭐ 20</span>
+                        <span>🔗 1</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>E.com <span class="public">Public</span></h2>
+                    <p></p>
+                    <a href="https://github.com/AnujZanje1142/small-e.com-project">E.com Online</a>
+                    <div class="details">
+                        <span>🔴HTMl,CSS,js And <br> Bootstrap</span>
+                        <span>⭐ 21</span>
+                        <span>🔗 4</span>
+                    </div>
+                </div>
+               
+                <div class="chart">
+                    <img src="Images/contributions (1).png">
+
+                </div>
+
+            </div>
+            
+            <!-- Text Area -->
+            <div class="about-me-info">
+                <h2> </h2>
+                <br>
+                <p>
+                </p>
+                <br>
+           
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+
+    <!-- CODING GOALS CONTAINER -->
+    <div id="contact-me-container" class="contact-me">
+        <div class="right-menu">
+            
+            <!-- Header -->
+            <div class="header">
+                <div class="forward-backward">
+                    
+                    <button onclick="returnHome()"><img class="backward-button" src="Images/pointing-arrow.png"></button>
+                    <button><img class="forward-button" src="Images/pointing-arrow.png"></button>
+                </div>
+                <div class="profile">
+                    <img>
+                    <h2>Anuj</h2>
+                    <button> ^ </button>
+                </div>
+            </div>
+            
+            <!-- Banner -->
+            <!-- <div class="banner">
+                <img src="Images/froggy-banner-3.jpeg">
+            </div> -->
+            
+            <!-- Title -->
+            <div class="image-and-title">
+                <img src="Images/out-0.png">
+                <div class="image-and-title-text">
+                    <h1>Coding Goals </h1>
+                    <h3>Fall 23, Winter 24 </h3>
+                </div>
+            </div>
+            
+            <!-- Text Area -->
+            <div class="about-me-info">
+                <h2>Goals for Junior Year</h2>
+                <ul>
+                    <li>Land an internship</li>
+                    <li>Participate in more Hackathons!</li>
+                    <li>Attend all my classes</li>
+                </ul>
+                <br>
+                <h2>Programming Goals</h2>
+                <ul>
+                    <li>Become a keyboard shortcut warrior</li>
+                    <li>Leetcode question everyday</li>
+                    <li>Read more programming books</li>
+                    <li>Learn some Typescript and data science</li>
+                    <li>Make another themed portfolio similar to this one</li>
+                </ul>
+                
+
+                
+            </div>
+    </div>
+    </div>
+
+
+
+    <!-- FIRESAFE -->
+    <div id="firesafe-container" class="firesafe">
+    <div class="right-menu">
+        
+        <!-- Header -->
+        <div class="header">
+            <div class="forward-backward">
+                
+                <button onclick="returnHome()"><img class="backward-button" src="Images/pointing-arrow.png"></button>
+                <button><img class="forward-button" src="Images/pointing-arrow.png"></button>
+            </div>
+            <div class="profile">
+                <img>
+                <h2>Anuj</h2>
+                <button> ^ </button>
+            </div>
+        </div>
+        
+        <!-- Banner -->
+        <!-- <div class="banner">
+            <img src="Images/froggy-banner-3.jpeg">
+        </div> -->
+        
+        <!-- Title -->
+        <div class="image-and-title">
+            <img src="Images/pngegg.png">
+            <div class="image-and-title-text">
+                <h1>Online Grocery</h1>
+                <h3>Created April 2024</h3>
+            </div>
+        </div>
+        
+        <!-- Text Area -->
+        <div class="about-me-info">
+            <h1>What is Grocery Store ?</h1>
+            <br>
+            <h3>It's my clg final year project with small grocery store contributions with my friends and my faculty . it's  a very helpful website and easy to use and easy to checkout also .</h3>
+            <br>
+            <h1>Some Features</h1>
+            <ul>
+                <li>Users sign up and are stored in the database</li>
+                <li>Users can order product and devliver at home </li>
+                <li>Users can optional payment like COD and online payment</li>
+                <li>After devlivers product user are rate and review the producat and their service</li>
+                <li>Users are also able to see on the order track</li>
+            </ul>
+            <br>
+            <div class="firesafe-images">
+                <img src="Images/clideo_editor_66c7418ef1b848ec9a323a6cb80f0b15-ezgif.com-video-to-gif-converter.gif">
+                <img src="Images/Screenshot 2024-03-05 113458.png">
+            </div>
+            <h1>What it was made with</h1>
+            <div class="firesafe-tech">
+                <div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                    <h2>Python</h2>
+                </div>
+                <div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                    <h2>Bootstrap</h2>
+                </div>
+                <div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                    <h2>CSS</h2>
+                </div>
+                <div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                    <h2>HTML</h2>
+                </div>
+               
+                <div>
+                    <img src="Images/mysql-database-web-development-computer-software-dolphin-removebg-preview.png" />
+                    <h2>SQL</h2>
+                </div>
+                <div>
+                    <img src="Images/58481791cef1014c0b5e4994.png"/><br>
+                    <br>
+                    
+
+                
+                    <h2>Php</h2>
+                </div>
+            </div>
+            <a class="firesafe-github" href="https://github.com/AnujZanje1142?tab=repositories" target="_blank">
+                <h1>Github Repository</h1>
+            </a>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- FROGGY JUMPER -->
+    <div id="froggy-jumper-container" class="froggy-jumper">
+        <div class="right-menu">
+            
+            <!-- Header -->
+            <div class="header">
+                <div class="forward-backward">
+                    
+                    <button onclick="returnHome()"><img class="backward-button" src="Images/pointing-arrow.png"></button>
+                    <button><img class="forward-button" src="Images/pointing-arrow.png"></button>
+                </div>
+                <div class="profile">
+                    <img>
+                    <h2>Anuj</h2>
+                    <button> ^ </button>
+                </div>
+            </div>
+            
+            <!-- Banner -->
+            <!-- <div class="banner">
+                <img src="Images/froggy-banner-3.jpeg">
+            </div> -->
+            
+            <!-- Title -->
+            <div class="image-and-title">
+                <img src="Images/image-removebg-preview.png">
+                
+                <div class="image-and-title-text">
+                    <h1>Online Movie</h1>
+                    <h3>Created November 2023</h3>
+                </div>
+            </div>
+            
+            <!-- Text Area -->
+            <div class="about-me-info">
+                <br>
+                <h1>What is online Movie?</h1>
+                <p>A simple movie website clone project aims to replicate the basic functionalities of a popular movie site. <br>This project will help you practice essential web development skills and learn <br> how to build a fully functional web application.
+
+</p>
+
+                <div>
+                    </div><br><br>
+                    <h1>Projects Demo</h1>
+                    <div class="firesafe-images">
+                        <img src="Videos/clideo_editor_e8a865b310d74b5887254199eb9c38f0.gif">
+                        <img src="Images/Screenshot 2024-06-29 144757.png">
+                    </div>
+                </div>
+
+                <div>
+                    <h1>Made with</h1>
+                    <div class="firesafe-tech">
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"></a>
+                            <h2>HTMl</h2>
+                        </div>
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                            <h2>CSS</h2>
+                        </div>
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"" />
+                            <h2>Javascript</h2>
+                        </div>
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                            <h2>Bootstrap</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="firesafe-github" href="https://github.com/AnujZanje1142/Sem5" target="_blank">
+                    <h1>Github Repository</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+                
+    <!-- SPOTIFY PORTFOLIO -->
+    <div id="spotify-portfolio-container" class="spotify-portfolio">
+        <div class="right-menu">
+            
+            <!-- Header -->
+            <div class="header">
+                <div class="forward-backward">
+                    
+                    <button onclick="returnHome()"><img class="backward-button" src="Images/pointing-arrow.png"></button>
+                    <button><img class="forward-button" src="Images/pointing-arrow.png"></button>
+                </div>
+                <div class="profile">
+                    <img>
+                    <h2>Anuj</h2>
+                    <button> ^ </button>
+                </div>
+            </div>
+            
+            <!-- Banner -->
+            <!-- <div class="banner">
+                <img src="Images/froggy-banner-3.jpeg">
+            </div> -->
+            
+            <!-- Title -->
+            <div class="image-and-title">
+                <img src="Images/spotify-logo.png">
+                <div class="image-and-title-text">
+                    <h1>Spotify Portfolio</h1>
+                    <h3>Created June 2024</h3>
+                </div>
+            </div>
+            
+            <!-- Text Area -->
+            <div class="about-me-info">
+                <br>
+                <h1>Why Spotify?</h1>
+                <br>
+                <p>When I started University I was a music major studying classical saxophone performance. Even though I am a computer science student now I still enjoy music a lot and listen to music constantly.</p>
+                <br>
+                <h1>How it was made</h1>
+                <br>
+                <p>This site you are viewing right now was made with vanilla javascript, html and css (and lots of googling / debugging). It is a single page application which allows for super fast loading times. I made all the different pages load when they are clicked through javascript functions. Of course this is not overly simple but before the days of frameworks this was often the case for most web developers. DOM manipulation sucks! I am currently working on porting this project over into React and am using React Router to ensure the site still feels quick when loading different sections.</p>
+                </div>
+            </div>
+            
+    </div>
+
+
+
+    <!-- JAVASCRIPT LINK -->
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
