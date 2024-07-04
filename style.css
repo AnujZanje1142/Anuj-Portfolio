@@ -636,7 +636,7 @@ LEFT UI
 
 .playlist {
     width: 100%;
-    max-width: 500px;
+    max-width: 350px;
     display: flex;
     align-items: center;
     background-color: #212121;
