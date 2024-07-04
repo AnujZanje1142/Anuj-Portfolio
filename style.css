@@ -972,9 +972,9 @@ MEDIA QUERIES ARE HERE
 
 
     .home {
-        width: max-content;
+        width: fit-content;
         margin-left: 0.21rem;
-        margin-right: 120px;
+        margin-right: 100px;
         background-color: #212121;
         border-radius: 0.5rem;
     }
