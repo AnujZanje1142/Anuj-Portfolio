@@ -984,6 +984,7 @@ MEDIA QUERIES ARE HERE
 
     .search {
         display:flex;
+        margin-right:100px;
     }
 
     .spotify-container {
