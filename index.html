@@ -1,759 +1,1142 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width; user-scalable=0; initial-scale=0.9" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Anuj Zanje — M.Sc. Computer Science (AI/ML) student and self-taught developer. Projects, academic reports, and skills, presented in a Spotify-inspired portfolio.">
+<title>Anuj Zanje — Portfolio</title>
 
-    <title>Anuj Zanje</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link rel="icon" href="Images/anuj.png">
+<!-- Canonical URL: replace with your real deployed domain -->
+<link rel="canonical" href="https://anujzanje.dev/">
+
+<!-- Open Graph: controls how this page looks when shared on LinkedIn, WhatsApp, Facebook -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Anuj Zanje — Portfolio">
+<meta property="og:description" content="AI/ML & data analyst. M.Sc. Computer Science (AI/ML) student and self-taught developer — projects, academic reports, and skills.">
+<meta property="og:image" content="Images/anuj.png">
+<meta property="og:url" content="https://anujzanje.dev/">
+<meta property="og:site_name" content="Anuj Zanje — Portfolio">
+
+<!-- Twitter Card: controls preview when shared on X/Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Anuj Zanje — Portfolio">
+<meta name="twitter:description" content="AI/ML & data analyst. M.Sc. Computer Science (AI/ML) student and self-taught developer.">
+<meta name="twitter:image" content="Images/anuj.png">
+
+<!-- Browser tab / mobile address bar color -->
+<meta name="theme-color" content="#1ed760">
+
+<!-- Icons -->
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="Images/anuj.png">
+<link rel="apple-touch-icon" href="Images/anuj.png">
+
+<!-- Structured data: tells Google this page is about a specific person -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Anuj Zanje",
+  "jobTitle": "AI/ML & Data Analyst",
+  "url": "https://anujzanje.dev/",
+  "image": "Images/anuj.png",
+  "sameAs": [
+    "https://www.linkedin.com/in/anuj-zanje-281714236/",
+    "https://github.com/AnujZanje1142"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Ahmedabad",
+    "addressCountry": "IN"
+  }
+}
+</script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 
-    <!-- DROPDOWN MENU -->
-    <div id="dropdown" class="dropdown-menu">
-        <!-- Contact me Container -->
-        <div class="spotify-container">
-            <h1>Contact Me</h1>
-            <div id="spotify-menu" class="spotify-playlists">
-                <a href="https://www.linkedin.com/in/anuj-zanje-281714236/" target=”_blank”>
-                    <div>
-                        <img src="Images/linkedin-icon.png">
-                        <h2>LinkedIn</h2>
-                    </div>
-                </a>
-           <a href="https://github.com/AnujZanje1142">
-                    <div>
-                        <img src="Images/github-icon.png">
-                        <h2>Github</h2>
-                    </div>
-             </a>
-                
-                <a href=mailto:"anujzanje@gamuil.com" target=”_blank”>
-                    <div>
-                        <img src="Images/email-icon.png">
-                        <h2>Email</h2>
-                    </div>
-                </a>
-                <a href="Anuj_Zanje_Resume_26-07-2023-20-13-27.pdf" target=”_blank”>
-                    <div>
-                        <img src="Images/resume-icon.png">
-                        <h2>Resume</h2>
-                    </div>
-                </a>
-            </div>
-        </div>
+<div class="mobile-drawer-backdrop" id="drawerBackdrop"></div>
 
-        <!-- SPOTIFY CONTAINER -->
-      
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2ONM44eYiDhx1hetnhXviU?utm_source=generator" width="96%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<div class="app-shell">
+
+  <!-- ============================= SIDEBAR ============================= -->
+  <a id="top"></a>
+  <nav class="sidebar" id="sidebar" aria-label="Primary">
+    <div class="brand-row">
+      <img class="brand-avatar" src="Images/anuj.png" alt="Anuj Zanje avatar">
+      <div>
+        <div class="name">Anuj Zanje</div>
+        <div class="tagline">AI/ML &amp; data analyst</div>
+      </div>
     </div>
 
 
-
-    <!-- LEFT MENU THINGS  -->
-    <div class="left-menu">
-        
-    
-
-        <div class="top-container">
-            <div onclick="dropdownMenu()" id="dropdown-menu-button" class="dropdown">
-                <img src="Images/dropdown-icon.png">
-            </div>
-            <div onclick="returnHome()"class="home">
-                <img src="https://uploads-ssl.webflow.com/6156d79b685c2b652cd52eb9/6158155fd68240aa253e5aaa_home-grey.svg">
-                <h3> Home </h3>
-            </div>
-            
-            <div class="search">
-                
-                <img src="Images/whatsapp.png">
-                
-                <div id="contact_me"><a href="https://wa.me/919624479810" target="_blank">Contact Me</a><i class="fa-brands fa-whatsapp"></i> </div>
-               
-              
-            </div>
-        </div>
-
-            <!-- BOTTOM LEFT CONTAINER -->
-        <div class="left-menu-container">
-
-            <!-- Contact me Container -->
-            <div class="spotify-container">
-                <h1>Contact Me</h1>
-                <div id="spotify-menu" class="spotify-playlists">
-                    <a href="https://www.linkedin.com/in/anuj-zanje-281714236/" target=”_blank”>
-                        <div>
-                            <img src="Images/linkedin-icon.png">
-                            <h2>LinkedIn</h2>
-                        </div>
-                    </a>
-                    <a href="https://github.com/AnujZanje1142">
-                        <div>
-                            <img src="Images/github-icon.png">
-                            <h2>Github</h2>
-                        </div>
-                    </a>
-                    
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=anujzanje@gmail.com" target=”_blank”>
-                        <div>
-                            <img src="Images/email-icon.png">
-                            <h2>Email</h2>
-                        </div>
-                    </a>
-                    <a href="Anuj_Zanje_Resume_26-07-2023-20-13-27.pdf" target=”_blank”>
-                        <div>
-                            <img src="Images/resume-icon.png">
-                            <h2>Resume</h2>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-     
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2ONM44eYiDhx1hetnhXviU?utm_source=generator" width="96%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
+    <!-- Navigation List -->
+    <div class="sidebar-block">
+      <ul class="nav-list" id="navList">
+        <li><a class="nav-link" data-target="hero" href="#hero"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></svg></span> Home</a></li>
+        <li><a class="nav-link" data-target="about" href="#about"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></span> About</a></li>
+        <li><a class="nav-link" data-target="education" href="#education"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2 9l10 5 10-5-10-5Z"/><path d="M6 11.5V17c0 1.2 2.7 2.5 6 2.5s6-1.3 6-2.5v-5.5"/></svg></span> Education</a></li>
+        <li><a class="nav-link" data-target="projects" href="#projects"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 6 2 12 8 18"/><polyline points="16 6 22 12 16 18"/></svg></span> Projects</a></li>
+        <li><a class="nav-link" data-target="method" href="#method"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="14.5 9.5 10.5 10.5 9.5 14.5 13.5 13.5"/></svg></span> Prompt Method</a></li>
+        <li><a class="nav-link" data-target="research" href="#research"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M14 3v4h4"/><path d="M9 13h6"/><path d="M9 17h6"/></svg></span> Academic Reports</a></li>
+        <li><a class="nav-link" data-target="skills" href="#skills"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="4" x2="5" y2="20"/><circle cx="5" cy="9" r="2"/><line x1="12" y1="4" x2="12" y2="20"/><circle cx="12" cy="15" r="2"/><line x1="19" y1="4" x2="19" y2="20"/><circle cx="19" cy="7" r="2"/></svg></span> Skills</a></li>
+        <li><a class="nav-link" data-target="repos" href="#repos"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a1 1 0 0 1 1-1h4l2 2h10a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7Z"/></svg></span> GitHub Activity</a></li>
+        <li><a class="nav-link" data-target="goals" href="#goals"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/></svg></span> Goals</a></li>
+        <li><a class="nav-link" data-target="contact" href="#contact"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m3.5 6 8.5 7 8.5-7"/></svg></span> Contact</a></li>
+      </ul>
     </div>
 
-
-
-    <!-- HOME SCREEN CONTAINER -->
-    <div id="home-container" class="main-container">
-        <div class="right-menu">
-            
-            <!-- Header -->
-            <div class="header">
-                <div class="forward-backward">
-                    <div onclick="returnHome()">
-                        <button><img class="backward-button" src="Images/pointing-arrow.png"></button>
-                    </div>
-                    <button><img class="forward-button" src="Images/pointing-arrow.png"></button>
-                </div>
-                <div class="profile">
-                    <img>
-                    <h2>Anuj</h2>
-                    <button> ^ </button>
-                </div>
-            </div>
-
-
-
-            <!-- Banner -->
-            <div class="banner">
-                <div class="banner-img">
-                    <h1 class="banner-text" img src="images/anuj.png">Welcome to my portfolio🙋‍♂️.</h1>
-                </div>
-            </div>
-
-
-
-            <!-- Greeting Message -->
-            <h1 id="greeting-message" class="greeting-message" >Javascript Pog</h1>
-
-
-
-            <!-- First Playlist Section -->
-            <div id="playlist-container" class="playlist-container">
-                <div class="playlist" onclick="HidingContainers('about-me-container');">
-                    <img src="Images/anuj.png">
-                    <div class="playlist-name">
-                        <h1>About Me</h1>    
-                    </div>
-                </div>
-                <div class="playlist" onclick="HidingContainers('section-two-container');">
-                    <img src="Images/working.png">
-                    <div class="playlist-name">
-                        <h1>Github Project</h1>    
-                    </div>
-                </div>
-                <div class="playlist" onclick="HidingContainers('contact-me-container');">
-                    <img src="Images/coding-icon.avif">
-                    <div class="playlist-name">
-                        <h1>Coding Goals</h1>    
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!-- Greeting Message -->
-            <h1 class="greeting-message">Projects</h1>
-
-
-
-            <!-- PROJECTS -->
-            <div id="playlist-container" class="playlist-container">
-                
-                <div class="playlist" onclick="HidingContainers('firesafe-container')">
-                    <img src="Images/shop.png">
-                    <div class="playlist-name">
-                        <h1>Online Grocery Store</h1>    
-                    </div>
-                </div>
-                <div class="playlist" onclick="HidingContainers('froggy-jumper-container')">
-                    <img src="Images/images-removebg-preview (1).png">
-                    <div class="playlist-name">
-                        <h1>Online Movie</h1>    
-                    </div>
-                </div>
-                <div class="playlist" onclick="HidingContainers('spotify-portfolio-container')">
-                    <img id="playlist-six-image" src="Images/website-logo.png">
-                    <div class="playlist-name">
-                        <h1 id="playlist-six-text">Spotify Portfolio</h1>    
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!-- Lower Section Title -->
-            <h1 id="tech-tools-title" class="tech-tools-title">Tools and Tech</h1>
-
-
-
-            <!-- Tools and Tech -->
-            <div id="tech-tools"class="genre-container">
-                
-                <div class="genre">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                    <h2>Javascript</h2>
-                    
-                </div>
-                <div class="genre">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-                    <h2>Python</h2>
-                    
-                </div>
-                <div class="genre">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                    <h2>CSS</h2>
-                    
-                </div>
-                <div class="genre">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                    <h2>HTML</h2>
-                    
-                </div>
-                <div class="genre">
-                    <img src="Images/mysql-database-web-development-computer-software-dolphin-removebg-preview.png">
-                    <h2>SQL</h2>
-                    
-                </div>
-                
-                
-                <div class="genre">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
-                    <h2>Bootstrap</h2>
-                    
-                </div>
-               
-                <div class="genre">
-                    <img style="border-radius: 0.5rem" src="Images/github-icon.png"/>
-                    <h2>Github</h2>
-
-                    
-                </div>
-                <div class="genre">
-                    <img style="border-radius: 0.5rem" src="https://w7.pngwing.com/pngs/301/722/png-transparent-adobe-logo-logos-photoshop-logos-and-brands-icon-thumbnail.png">
-                    <h2>Photoshop</h2>
-                </div>
-                <div class="genre">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-                    <h2>Git</h2>
-                    
-                </div>
-                <div class="genre">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
-                    <h2>Vscode</h2>
-                    
-                </div>
-            </div>
-
-
-        </div>
+    <!-- Contact Links Block -->
+    <div class="sidebar-block">
+      <h3 style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-dim);padding:.5rem;">Get in touch</h3>
+      <div class="sidebar-links">
+        <a href="https://www.linkedin.com/in/anuj-zanje-281714236/" target="_blank" rel="noopener noreferrer">
+          <img src="Images/linkedin-icon.png" alt=""><span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/AnujZanje1142" target="_blank" rel="noopener noreferrer">
+          <img src="Images/github-icon.png" alt=""><span>GitHub</span>
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=anujzanje@gmail.com" target="_blank" rel="noopener noreferrer">
+          <img src="Images/email-icon.png" alt=""><span>Email</span>
+        </a>
+        <a href="Anuj-Zanje_Resume.pdf" target="_blank" rel="noopener noreferrer">
+          <img src="Images/resume-icon.png" alt=""><span>Resume (PDF)</span>
+        </a>
+      </div>
     </div>
 
+  </nav>
 
+  <!-- ============================== MAIN =============================== -->
+  <div class="main">
 
-    <!-- ALL FOOTER THINGS -->
-   <footer class="footer">
-
-        <!-- CURRENT SONG IMG/TEXT -->
-       <div class="current-song">
-            <img class="current-album" src="Images/waving-wave.gif">
-            <div class="song-info">
-                <h2> Personal Portfolio - Spotify Version </h2>
-                <h3> Anuj Zanje</h3>
-            </div>
-            <img onclick="heartCheckbox()" id="grey-heart" class="grey-heart" src="https://uploads-ssl.webflow.com/6156d79b685c2b652cd52eb9/6157946790f93e5264dd3dc9_heart-grey.svg">
-            <img onclick="heartCheckbox()" id="red-heart" class="red-heart" src="Images/heart-removebg-preview.png " >
-        </div>
-
-       
-       
-        <!-- RIGHT SIDE VOLUME SLIDER -->
-        <div class="volume-div">
-            <div class="volume"></div>
-            <div class="volume-button"></div>
-        </div>
-
-    </footer>
-
-
-
-    <!-- ABOUT ME CONTAINER-->
-    <div id="about-me-container" class="about-me">
-        <div class="right-menu">
-            
-            <!-- Header -->
-            <div class="header">
-                <div class="forward-backward">
-                    
-                    <button onclick="returnHome()"><img class="backward-button" src="Images/pointing-arrow.png"></button>
-                    <button><img class="forward-button" src="Images/pointing-arrow.png"></button>
-                </div>
-                <div class="profile">
-                    <img>
-                    <h2>Anuj</h2>
-                    <button> ^ </button>
-                </div>
-            </div>
-            
-            <!-- Banner -->
-            <!-- <div class="banner">
-                <img src="Images/froggy-banner-3.jpeg">
-            </div> -->
-            
-            <!-- Title -->
-            <div class="image-and-title">
-                <img src="Images/out-0 (1).png">
-                <div class="image-and-title-text">
-                    <h1>About Me</h1>
-                    <h3>29th March 2004</h3>
-                </div>
-            </div>
-            
-            <!-- Text Area -->
-            <div class="about-me-info">
-                <h1>Hello and Thanks for checking out my site!</h1>
-                <h2>My name is Anuj Zanje </h2>
-            
-                <div>
-                    <h3>Born and raised in Ahmedabad , India</h3>
-                    <h3>I am going into my 3rd year studying Computer Application at the Slievr Oak University</h3>
-                    <h3>I do lots of web developement in my free time creating cool looking website clones of well known companies such as the one you are viewing right now, <b>Spotify!</b></h3>
-                    <h3>Hope you enjoy checking out my site as much as I did creating it!</h3>
-                    <h3>Tap the heart on the footer to let me know if I did a good job!</h3>
-                </div>
-            </div>
-            
-        </div>
-        
+    <!-- Mobile-only top bar -->
+    <div class="mobile-topbar">
+      <div class="brand">
+        <img class="brand-avatar" src="Images/anuj.png" alt="">
+        Anuj Zanje
+      </div>
+      <div class="mobile-topbar-actions">
+        <button class="theme-toggle theme-toggle--icon" id="themeToggleMobile" type="button" aria-pressed="false" aria-label="Switch to light theme"><span aria-hidden="true">☼</span></button>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">☰</button>
+      </div>
     </div>
 
-
-
-    <!-- WORK EXPERIENCE CONTAINER-->
-    <div id="section-two-container" class="section-two">
-        <div class="right-menu">
-            
-            <!-- Header -->
-            <div class="header">
-                <div class="forward-backward">
-                    
-                    <button onclick="returnHome()"><img class="backward-button" src="Images/pointing-arrow.png"></button>
-                    <button><img class="forward-button" src="Images/pointing-arrow.png"></button>
-                </div>
-                <div class="profile">
-                    <img>
-                    <h2>Anuj</h2>
-                    <button> ^ </button>
-                </div>
-            </div>
-            
-            <!-- Banner -->
-            <!-- <div class="banner">
-                <img src="Images/froggy-banner-3.jpeg">
-            </div> -->
-            
-            <!-- Title -->
-            <div class="image-and-title">
-                <img src="Images/out-0 (2).png">
-                <div class="image-and-title-text">
-                    <h1>Github project</h1>
-                    <!-- <h3>Something Here</h3> -->
-                </div>
-            </div>
-            <div class="card-container">
-                <div  class="card">
-                    <h2>ml-papers <span class="public">Public</span></h2>
-                    
-                    <a href="https://github.com/AnujZanje1142/python-Quiz-">"python-Quiz"</a>
-                  
-                    <div class="details">
-                        <span>🔵 Python</span>
-                        <span>⭐ 65</span> 
-                        <span>🔗 12</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <h2>URL shortner <span class="public">Public</span></h2>
-                    <p> </p>
-                    <a href="https://github.com/AnujZanje1142/CodeClauseInternship_URLshortener">CodeClauseInternship_URLshortene</a>
-                    <div class="details">
-                        <span>🔵 Python </span>
-                        <span>⭐ 177</span>
-                        <span>🔗 71</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <h2>Music Player<span class="public">Public</span></h2>
-                    </p>
-                    <a href="https://github.com/AnujZanje1142/CodeClauseInternship_MusicPlayerusingPyhton">MusicPlayerusingPyhton 🐍</a>
-                    <div class="details">
-                        <span>🔵 Python</span>
-                        <span>⭐ 15</span>
-                        <span>🔗 1</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <h2>Library-Management-System <span class="public">Public</span></h2>
-                   <a href="https://github.com/AnujZanje1142/Library-Management-System-">Library-Management-System</a>
-                    <div class="details">
-                        <span>🔵Python & SQL,<br> Flask</span>
-                        <span>⭐ 88</span>
-                        <span>🔗 13</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <h2>Movie Clone  <span class="public">Public</span></h2>
-                    <p></p>
-                    <a href="https://github.com/AnujZanje1142/Sem5">Movie Clone</a>
-
-                    <div class="details">
-                        <span>🔴HTMl,CSS and JS</span>
-                        <span>⭐ 20</span>
-                        <span>🔗 1</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <h2>E.com <span class="public">Public</span></h2>
-                    <p></p>
-                    <a href="https://github.com/AnujZanje1142/small-e.com-project">E.com Online</a>
-                    <div class="details">
-                        <span>🔴HTMl,CSS,js And <br> Bootstrap</span>
-                        <span>⭐ 21</span>
-                        <span>🔗 4</span>
-                    </div>
-                </div>
-               
-                <div class="chart">
-                    <img src="Images/contributions (1).png">
-
-                </div>
-
-            </div>
-            
-            <!-- Text Area -->
-            <div class="about-me-info">
-                <h2> </h2>
-                <br>
-                <p>
-                </p>
-                <br>
-           
-            </div>
-            
-        </div>
-        
+    <!-- Desktop topbar -->
+    <div class="topbar" id="topbar">
+      <div class="topbar-nav-buttons">
+        <button class="round-btn" id="navBack" aria-label="Scroll up">‹</button>
+        <button class="round-btn" id="navForward" aria-label="Scroll down">›</button>
+      </div>
+      <div class="topbar-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Switch to light theme"><span aria-hidden="true">☼</span><span id="themeLabel">Light mode</span></button>
+        <a class="contact-pill" href="https://wa.me/919624479810" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>
+      </div>
     </div>
 
+    <main id="main-content">
 
-
-    <!-- CODING GOALS CONTAINER -->
-    <div id="contact-me-container" class="contact-me">
-        <div class="right-menu">
-            
-            <!-- Header -->
-            <div class="header">
-                <div class="forward-backward">
-                    
-                    <button onclick="returnHome()"><img class="backward-button" src="Images/pointing-arrow.png"></button>
-                    <button><img class="forward-button" src="Images/pointing-arrow.png"></button>
-                </div>
-                <div class="profile">
-                    <img>
-                    <h2>Anuj</h2>
-                    <button> ^ </button>
-                </div>
-            </div>
-            
-            <!-- Banner -->
-            <!-- <div class="banner">
-                <img src="Images/froggy-banner-3.jpeg">
-            </div> -->
-            
-            <!-- Title -->
-            <div class="image-and-title">
-                <img src="Images/out-0.png">
-                <div class="image-and-title-text">
-                    <h1>Coding Goals </h1>
-                    <h3>Fall 23, Winter 24 </h3>
-                </div>
-            </div>
-            
-            <!-- Text Area -->
-            <div class="about-me-info">
-                <h2>Goals for Junior Year</h2>
-                <ul>
-                    <li>Land an internship</li>
-                    <li>Participate in more Hackathons!</li>
-                    <li>Attend all my classes</li>
-                </ul>
-                <br>
-                <h2>Programming Goals</h2>
-                <ul>
-                    <li>Become a keyboard shortcut warrior</li>
-                    <li>Leetcode question everyday</li>
-                    <li>Read more programming books</li>
-                    <li>Learn some Typescript and data science</li>
-                    <li>Make another themed portfolio similar to this one</li>
-                </ul>
-                
-
-                
-            </div>
-    </div>
-    </div>
-
-
-
-    <!-- FIRESAFE -->
-    <div id="firesafe-container" class="firesafe">
-    <div class="right-menu">
-        
-        <!-- Header -->
-        <div class="header">
-            <div class="forward-backward">
-                
-                <button onclick="returnHome()"><img class="backward-button" src="Images/pointing-arrow.png"></button>
-                <button><img class="forward-button" src="Images/pointing-arrow.png"></button>
-            </div>
-            <div class="profile">
-                <img>
-                <h2>Anuj</h2>
-                <button> ^ </button>
-            </div>
+      <!-- ============================ HERO ============================ -->
+      <section class="hero" id="hero" aria-label="Introduction">
+        <div class="hero-fx" aria-hidden="true">
+          <svg class="hero-net" viewBox="0 0 800 300" preserveAspectRatio="none">
+            <g class="hero-net-lines">
+              <line x1="40" y1="60" x2="220" y2="140"></line>
+              <line x1="220" y1="140" x2="120" y2="240"></line>
+              <line x1="220" y1="140" x2="400" y2="70"></line>
+              <line x1="400" y1="70" x2="600" y2="150"></line>
+              <line x1="400" y1="70" x2="480" y2="230"></line>
+              <line x1="600" y1="150" x2="760" y2="90"></line>
+              <line x1="600" y1="150" x2="700" y2="250"></line>
+              <line x1="480" y1="230" x2="700" y2="250"></line>
+              <line x1="120" y1="240" x2="480" y2="230"></line>
+            </g>
+            <g class="hero-net-nodes">
+              <circle cx="40" cy="60" r="4"></circle>
+              <circle cx="220" cy="140" r="5"></circle>
+              <circle cx="120" cy="240" r="4"></circle>
+              <circle cx="400" cy="70" r="5"></circle>
+              <circle cx="600" cy="150" r="5"></circle>
+              <circle cx="480" cy="230" r="4"></circle>
+              <circle cx="760" cy="90" r="4"></circle>
+              <circle cx="700" cy="250" r="4"></circle>
+            </g>
+          </svg>
+          <span class="hero-orb hero-orb--1"></span>
+          <span class="hero-orb hero-orb--2"></span>
         </div>
-        
-        <!-- Banner -->
-        <!-- <div class="banner">
-            <img src="Images/froggy-banner-3.jpeg">
-        </div> -->
-        
-        <!-- Title -->
-        <div class="image-and-title">
-            <img src="Images/pngegg.png">
-            <div class="image-and-title-text">
-                <h1>Online Grocery</h1>
-                <h3>Created April 2024</h3>
-            </div>
+        <img class="hero-avatar" src="Images/anuj.png" alt="Portrait of Anuj Zanje">
+        <div class="hero-copy">
+          <span class="eyebrow">Portfolio</span>
+          <h1 class="hero-title">Anuj Zanje</h1>
+          <span class="hero-badge"><span class="hero-badge-dot"></span>AI / ML &amp; data analyst</span>
+          <div class="hero-meta">
+            <span>M.Sc. Computer Science (AI/ML) student</span>
+            <span class="dot"></span>
+            <span>Ahmedabad, India</span>
+            <span class="dot"></span>
+            <span id="greeting-message">Welcome</span>
+          </div>
         </div>
-        
-        <!-- Text Area -->
-        <div class="about-me-info">
-            <h1>What is Grocery Store ?</h1>
-            <br>
-            <h3>It's my clg final year project with small grocery store contributions with my friends and my faculty . it's  a very helpful website and easy to use and easy to checkout also .</h3>
-            <br>
-            <h1>Some Features</h1>
+      </section>
+
+      <!-- Quick Navigation Tiles -->
+      <h2 class="greeting-message">Jump to a section</h2>
+      <div class="tile-grid">
+        <a class="tile" href="#about">
+          <img src="Images/anuj.png" alt="">
+          <span class="tile-name">About Me</span>
+        </a>
+        <a class="tile" href="#projects">
+          <img src="Images/working.png" alt="">
+          <span class="tile-name">Projects</span>
+        </a>
+        <a class="tile" href="#skills">
+          <img src="Images/coding-icon.avif" alt="">
+          <span class="tile-name">Skills</span>
+        </a>
+      </div>
+
+      <!-- ============================ ABOUT ============================ -->
+      <section class="section" id="about" aria-labelledby="about-heading">
+        <div class="section-head">
+          <span class="eyebrow">Who I am</span>
+          <h2 class="section-heading" id="about-heading">About Me</h2>
+        </div>
+        <div class="two-col">
+          <div class="info-card">
+            <h3>Hello, thanks for stopping by 👋</h3>
+            <p>My name is Anuj Zanje. I was born and raised in Ahmedabad, India, and I'm an M.Sc. Computer Science (AI/ML) student with a strong foundation in Python, SQL, Excel, Power BI, machine learning, and data analysis — and I spend a lot of free time building web and AI projects, including this Spotify-styled portfolio.</p>
+            <p>I have hands-on experience developing academic and independent projects using AI tools, including AI-assisted development, prompt engineering, data analysis, and machine learning techniques — and I'm currently looking for a fresher or trainee opportunity to apply that knowledge and grow in a professional environment.</p>
+          </div>
+          <div class="info-card">
+            <h3>Quick facts</h3>
             <ul>
-                <li>Users sign up and are stored in the database</li>
-                <li>Users can order product and devliver at home </li>
-                <li>Users can optional payment like COD and online payment</li>
-                <li>After devlivers product user are rate and review the producat and their service</li>
-                <li>Users are also able to see on the order track</li>
+              <li>Pursuing an M.Sc. in Computer Science (AI/ML) at Kaushalya The Skills University, Ahmedabad — expected 2026</li>
+              <li>BCA graduate, Silver Oak University, Ahmedabad — GPA 8.47/10 (2024)</li>
+              <li>Comfortable across the full stack: Python, SQL, NLP, HTML/CSS/JS, PHP</li>
+              <li>Completed internship projects (URL shortener, music player) via CodeClause</li>
+              <li>Actively developing open-source machine learning &amp; NLP pipelines on GitHub</li>
             </ul>
-            <br>
-            <div class="firesafe-images">
-                <img src="Images/clideo_editor_66c7418ef1b848ec9a323a6cb80f0b15-ezgif.com-video-to-gif-converter.gif">
-                <img src="Images/Screenshot 2024-03-05 113458.png">
+            <div class="profile-icon-row" aria-label="Core tools">
+              <span class="skill-icon skill-icon--logo skill-icon--lg"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></span>
+              <span class="skill-icon skill-icon--logo skill-icon--lg"><img src="Images/mysql-database-web-development-computer-software-dolphin-removebg-preview.png" alt="SQL"></span>
+              <span class="skill-icon skill-icon--logo skill-icon--lg"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas"></span>
+              <span class="skill-icon skill-icon--logo skill-icon--lg"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy"></span>
+              <span class="skill-icon skill-icon--logo skill-icon--lg"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn"></span>
+              <span class="skill-icon skill-icon--logo skill-icon--lg"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask"></span>
+              <span class="skill-icon skill-icon--logo skill-icon--lg"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV"></span>
             </div>
-            <h1>What it was made with</h1>
-            <div class="firesafe-tech">
-                <div>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-                    <h2>Python</h2>
-                </div>
-                <div>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
-                    <h2>Bootstrap</h2>
-                </div>
-                <div>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                    <h2>CSS</h2>
-                </div>
-                <div>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                    <h2>HTML</h2>
-                </div>
-               
-                <div>
-                    <img src="Images/mysql-database-web-development-computer-software-dolphin-removebg-preview.png" />
-                    <h2>SQL</h2>
-                </div>
-                <div>
-                    <img src="Images/58481791cef1014c0b5e4994.png"/><br>
-                    <br>
-                    
-
-                
-                    <h2>Php</h2>
-                </div>
-            </div>
-            <a class="firesafe-github" href="https://github.com/AnujZanje1142?tab=repositories" target="_blank">
-                <h1>Github Repository</h1>
-            </a>
+          </div>
         </div>
-    </div>
-    </div>
+      </section>
 
-
-
-    <!-- FROGGY JUMPER -->
-    <div id="froggy-jumper-container" class="froggy-jumper">
-        <div class="right-menu">
-            
-            <!-- Header -->
-            <div class="header">
-                <div class="forward-backward">
-                    
-                    <button onclick="returnHome()"><img class="backward-button" src="Images/pointing-arrow.png"></button>
-                    <button><img class="forward-button" src="Images/pointing-arrow.png"></button>
-                </div>
-                <div class="profile">
-                    <img>
-                    <h2>Anuj</h2>
-                    <button> ^ </button>
-                </div>
-            </div>
-            
-            <!-- Banner -->
-            <!-- <div class="banner">
-                <img src="Images/froggy-banner-3.jpeg">
-            </div> -->
-            
-            <!-- Title -->
-            <div class="image-and-title">
-                <img src="Images/image-removebg-preview.png">
-                
-                <div class="image-and-title-text">
-                    <h1>Online Movie</h1>
-                    <h3>Created November 2023</h3>
-                </div>
-            </div>
-            
-            <!-- Text Area -->
-            <div class="about-me-info">
-                <br>
-                <h1>What is online Movie?</h1>
-                <p>A simple movie website clone project aims to replicate the basic functionalities of a popular movie site. <br>This project will help you practice essential web development skills and learn <br> how to build a fully functional web application.
-
-</p>
-
+      <!-- ======================= EDUCATION & CERTS ======================= -->
+      <section class="section" id="education" aria-labelledby="education-heading">
+        <div class="section-head">
+          <span class="eyebrow">Background</span>
+          <h2 class="section-heading" id="education-heading">Education &amp; Certifications</h2>
+          <p class="section-sub">Academic path, certifications, and the languages I work in.</p>
+        </div>
+        <div class="two-col">
+          <div class="info-card">
+            <h3>Education</h3>
+            <div class="edu-list">
+              <div class="edu-item">
+                <span class="edu-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2 9l10 5 10-5-10-5Z"/><path d="M6 11.5V17c0 1.2 2.7 2.5 6 2.5s6-1.3 6-2.5v-5.5"/></svg>
+                </span>
                 <div>
-                    </div><br><br>
-                    <h1>Projects Demo</h1>
-                    <div class="firesafe-images">
-                        <img src="Images/clideo_editor_e8a865b310d74b5887254199eb9c38f0.gif">
-                        <img src="Images/Screenshot 2024-06-29 144757.png">
-                    </div>
+                  <div class="edu-degree">M.Sc. Computer Science (AI/ML)</div>
+                  <div class="edu-meta">Kaushalya The Skills University, Ahmedabad · Expected 2026</div>
                 </div>
-
+              </div>
+              <div class="edu-item">
+                <span class="edu-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18"/><path d="M8 4v-1"/><path d="M16 4v-1"/></svg>
+                </span>
                 <div>
-                    <h1>Made with</h1>
-                    <div class="firesafe-tech">
-                        <div>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"></a>
-                            <h2>HTMl</h2>
-                        </div>
-                        <div>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                            <h2>CSS</h2>
-                        </div>
-                        <div>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"" />
-                            <h2>Javascript</h2>
-                        </div>
-                        <div>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
-                            <h2>Bootstrap</h2>
-                        </div>
-                    </div>
+                  <div class="edu-degree">Bachelor of Computer Applications (BCA)</div>
+                  <div class="edu-meta">Silver Oak University, Ahmedabad · GPA 8.47/10 · 2024</div>
                 </div>
+              </div>
+              <div class="edu-item">
+                <span class="edu-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>
+                </span>
+                <div>
+                  <div class="edu-degree">10th &amp; 12th Standard</div>
+                  <div class="edu-meta">Shriji Vidhyalay, Ahmedabad · 60.0%–61.0% · 2019–2021</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info-card">
+            <h3>Certifications</h3>
+            <div class="cert-badge">
+              <span class="cert-badge-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="#4285F4" d="M12 2 2 7v10l10 5 10-5V7Z"/></svg>
+              </span>
+              <div>
+                <div class="cert-badge-name">Google Cloud — Introduction to Generative AI</div>
+                <div class="cert-badge-meta">Completion Badge · August 2026</div>
+              </div>
+            </div>
+            <h3>Languages</h3>
+            <div class="lang-chip-row">
+              <span class="lang-chip">English</span>
+              <span class="lang-chip">Hindi</span>
+              <span class="lang-chip">Gujarati</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <a class="firesafe-github" href="https://github.com/AnujZanje1142/Sem5" target="_blank">
-                    <h1>Github Repository</h1>
+      <!-- ========================== PROJECTS =========================== -->
+      <section class="section" id="projects" aria-labelledby="projects-heading">
+        <div class="section-head">
+          <span class="eyebrow">Selected work</span>
+          <h2 class="section-heading" id="projects-heading">Projects</h2>
+          <p class="section-sub">A mix of academic and self-directed builds, with machine learning, NLP, and prompt engineering used to turn open-ended questions into clear code, data, and research workflows.</p>
+        </div>
+
+        <div class="proj-slider" id="projSlider" aria-roledescription="carousel" aria-label="Project showcase — drag or use the arrow buttons to browse">
+          <div class="proj-slider-viewport" id="projViewport" tabindex="0" aria-label="Scrollable project list">
+            <div class="proj-slider-track" id="projTrack" role="list">
+
+              <article class="proj-card" role="listitem">
+                <a class="proj-card-link" href="https://github.com/AnujZanje1142/AI-Chatbot-for-University-Admission-and-Personalised-" target="_blank" rel="noopener noreferrer" aria-label="View the AI University Admission Chatbot repository">
+                  <div class="proj-card-media is-fallback">
+                    <svg class="proj-icon" viewBox="0 0 64 64" aria-hidden="true">
+                      <rect x="8" y="12" width="48" height="30" rx="8" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                      <path d="M20 42 L16 52 L28 42" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+                      <circle class="picon-dot" cx="22" cy="27" r="3" fill="currentColor"/>
+                      <circle class="picon-dot picon-dot--2" cx="32" cy="27" r="3" fill="currentColor"/>
+                      <circle class="picon-dot picon-dot--3" cx="42" cy="27" r="3" fill="currentColor"/>
+                    </svg>
+                    <span class="proj-card-tag">Flagship · AI/ML</span>
+                    <span class="proj-card-view"><span>View Project</span><span class="proj-card-view-arrow" aria-hidden="true">↗</span></span>
+                  </div>
+                  <div class="proj-card-info">
+                    <h3 class="proj-card-title">AI Chatbot &amp; Admin CRM Dashboard for University Admissions</h3>
+                    <p class="proj-card-desc">A multilingual (English, Hindi, Gujarati) Flask-based chatbot and admin CRM dashboard, using NLTK preprocessing, a BERT fallback layer, and a TF-IDF + 4-model ML ensemble (SVM, Random Forest, Naive Bayes, Logistic Regression) to classify student intent across 101 courses. The end-to-end architecture connects live chat sessions to a staff dashboard for lead tracking, escalation, and analytics — piloted across 250+ student sessions with 93% answer accuracy and roughly a 50% cut in routine staff query volume.</p>
+                    <div class="proj-card-stack">
+                      <span class="proj-card-chip">Python</span><span class="proj-card-chip">Flask</span>
+                      <span class="proj-card-chip">NLTK</span><span class="proj-card-chip">BERT</span>
+                      <span class="proj-card-chip">Machine Learning</span>
+                    </div>
+                  </div>
                 </a>
+              </article>
+
+              <article class="proj-card" role="listitem">
+                <a class="proj-card-link" href="https://github.com/AnujZanje1142?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="View the Real-Time Object Detection and Counting System repository">
+                  <div class="proj-card-media is-fallback">
+                    <svg class="proj-icon" viewBox="0 0 64 64" aria-hidden="true">
+                      <path d="M10 10h10 M10 10v10 M54 10h-10 M54 10v10 M10 54h10 M10 54v-10 M54 54h-10 M54 54v-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                      <rect x="20" y="34" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                      <circle cx="42" cy="24" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+                      <line class="picon-scanline" x1="14" y1="14" x2="14" y2="50" stroke="currentColor" stroke-width="2.5"/>
+                    </svg>
+                    <span class="proj-card-tag">Computer vision · 2024</span>
+                    <span class="proj-card-view"><span>View Project</span><span class="proj-card-view-arrow" aria-hidden="true">↗</span></span>
+                  </div>
+                  <div class="proj-card-info">
+                    <h3 class="proj-card-title">Real-Time Object Detection &amp; Counting System</h3>
+                    <p class="proj-card-desc">A real-time, multi-class object detection and counting system in Python using YOLOv8 (via the Ultralytics framework) and OpenCV on live webcam and video feed input — with adjustable confidence thresholds, live bounding-box annotation, automatic class-wise object counts, and a pipeline optimized for low-latency performance.</p>
+                    <div class="proj-card-stack">
+                      <span class="proj-card-chip">Python</span><span class="proj-card-chip">YOLOv8</span>
+                      <span class="proj-card-chip">OpenCV</span><span class="proj-card-chip">Ultralytics</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="proj-card" role="listitem">
+                <a class="proj-card-link" href="https://github.com/AnujZanje1142?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="View the Online Grocery Store repository">
+                  <div class="proj-card-media is-fallback">
+                    <svg class="proj-icon picon-bounce" viewBox="0 0 64 64" aria-hidden="true">
+                      <path d="M8 12h6l6 28h28l6-20H22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+                      <circle cx="26" cy="48" r="4" fill="currentColor"/>
+                      <circle cx="42" cy="48" r="4" fill="currentColor"/>
+                    </svg>
+                    <span class="proj-card-tag">College project</span>
+                    <span class="proj-card-view"><span>View Project</span><span class="proj-card-view-arrow" aria-hidden="true">↗</span></span>
+                  </div>
+                  <div class="proj-card-info">
+                    <h3 class="proj-card-title">Online Grocery Store</h3>
+                    <p class="proj-card-desc">A final-year college project built with two classmates and faculty guidance — a small grocery e-commerce site covering browsing, checkout, delivery, and feedback.</p>
+                    <div class="proj-card-stack">
+                      <span class="proj-card-chip">PHP</span><span class="proj-card-chip">MySQL</span>
+                      <span class="proj-card-chip">Python</span><span class="proj-card-chip">Bootstrap</span>
+                      <span class="proj-card-chip">HTML/CSS</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="proj-card" role="listitem">
+                <a class="proj-card-link" href="https://github.com/AnujZanje1142/Sem5" target="_blank" rel="noopener noreferrer" aria-label="View the Movie Site Clone repository">
+                  <div class="proj-card-media is-fallback">
+                    <svg class="proj-icon" viewBox="0 0 64 64" aria-hidden="true">
+                      <g class="picon-spin">
+                        <circle cx="32" cy="32" r="20" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                        <circle cx="32" cy="15" r="4" fill="currentColor"/>
+                        <circle cx="46" cy="23" r="4" fill="currentColor"/>
+                        <circle cx="46" cy="41" r="4" fill="currentColor"/>
+                        <circle cx="32" cy="49" r="4" fill="currentColor"/>
+                        <circle cx="18" cy="41" r="4" fill="currentColor"/>
+                        <circle cx="18" cy="23" r="4" fill="currentColor"/>
+                      </g>
+                      <path d="M27 25 L41 32 L27 39 Z" fill="currentColor"/>
+                    </svg>
+                    <span class="proj-card-tag">Semester project</span>
+                    <span class="proj-card-view"><span>View Project</span><span class="proj-card-view-arrow" aria-hidden="true">↗</span></span>
+                  </div>
+                  <div class="proj-card-info">
+                    <h3 class="proj-card-title">Movie Site Clone</h3>
+                    <p class="proj-card-desc">A front-end clone that replicates the core browsing experience of a popular movie site, built to practice layout, responsive design, and DOM interaction fundamentals.</p>
+                    <div class="proj-card-stack">
+                      <span class="proj-card-chip">HTML</span><span class="proj-card-chip">CSS</span>
+                      <span class="proj-card-chip">JavaScript</span><span class="proj-card-chip">Bootstrap</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="proj-card" role="listitem">
+                <a class="proj-card-link" href="https://github.com/AnujZanje1142/Library-Management-System-" target="_blank" rel="noopener noreferrer" aria-label="View the Library Management System repository">
+                  <div class="proj-card-media is-fallback">
+                    <svg class="proj-icon" viewBox="0 0 64 64" aria-hidden="true">
+                      <path d="M32 18c-6-4-15-4-21-2v30c6-2 15-2 21 2" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                      <path class="picon-page" d="M32 18c6-4 15-4 21-2v30c-6-2-15-2-21 2" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                      <line x1="32" y1="18" x2="32" y2="48" stroke="currentColor" stroke-width="2.5"/>
+                    </svg>
+                    <span class="proj-card-tag">Backend</span>
+                    <span class="proj-card-view"><span>View Project</span><span class="proj-card-view-arrow" aria-hidden="true">↗</span></span>
+                  </div>
+                  <div class="proj-card-info">
+                    <h3 class="proj-card-title">Library Management System</h3>
+                    <p class="proj-card-desc">A Flask application for tracking a library's catalog, checkouts, and returns, backed by a relational database — also a case study in turning natural-language requests into validated SQL questions.</p>
+                    <div class="proj-card-stack">
+                      <span class="proj-card-chip">Python</span><span class="proj-card-chip">Flask</span><span class="proj-card-chip">SQL</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="proj-card" role="listitem">
+                <a class="proj-card-link" href="https://github.com/AnujZanje1142/python-Quiz-" target="_blank" rel="noopener noreferrer" aria-label="View the Python Quiz System repository">
+                  <div class="proj-card-media is-fallback">
+                    <svg class="proj-icon" viewBox="0 0 64 64" aria-hidden="true">
+                      <circle cx="32" cy="32" r="21" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                      <text class="picon-bounce" x="32" y="41" text-anchor="middle" font-size="24" font-weight="700" fill="currentColor">?</text>
+                    </svg>
+                    <span class="proj-card-tag">Supporting project</span>
+                    <span class="proj-card-view"><span>View Project</span><span class="proj-card-view-arrow" aria-hidden="true">↗</span></span>
+                  </div>
+                  <div class="proj-card-info">
+                    <h3 class="proj-card-title">Python Quiz System</h3>
+                    <p class="proj-card-desc">A quiz application built in Python, covering question flow, scoring, and result handling.</p>
+                    <div class="proj-card-stack">
+                      <span class="proj-card-chip">Python</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="proj-card" role="listitem">
+                <a class="proj-card-link" href="https://github.com/AnujZanje1142/CodeClauseInternship_URLshortener" target="_blank" rel="noopener noreferrer" aria-label="View the URL Shortener repository">
+                  <div class="proj-card-media is-fallback">
+                    <svg class="proj-icon" viewBox="0 0 64 64" aria-hidden="true">
+                      <rect class="picon-linkA" x="8" y="24" width="24" height="16" rx="8" fill="none" stroke="currentColor" stroke-width="3"/>
+                      <rect class="picon-linkB" x="32" y="24" width="24" height="16" rx="8" fill="none" stroke="currentColor" stroke-width="3"/>
+                    </svg>
+                    <span class="proj-card-tag">CodeClause internship</span>
+                    <span class="proj-card-view"><span>View Project</span><span class="proj-card-view-arrow" aria-hidden="true">↗</span></span>
+                  </div>
+                  <div class="proj-card-info">
+                    <h3 class="proj-card-title">URL Shortener</h3>
+                    <p class="proj-card-desc">A Python-based URL shortening service built during a CodeClause internship, generating and resolving short links.</p>
+                    <div class="proj-card-stack">
+                      <span class="proj-card-chip">Python</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="proj-card" role="listitem">
+                <a class="proj-card-link" href="https://github.com/AnujZanje1142/Book-Ninja" target="_blank" rel="noopener noreferrer" aria-label="View the Book Ninja AI Book Generator repository">
+                  <div class="proj-card-media is-fallback">
+                    <svg class="proj-icon" viewBox="0 0 64 64" aria-hidden="true">
+                      <g class="picon-spin picon-spin--fast">
+                        <path d="M32 6 L38 26 L58 32 L38 38 L32 58 L26 38 L6 32 L26 26 Z" fill="currentColor"/>
+                        <circle cx="32" cy="32" r="5" fill="var(--surface-3)"/>
+                      </g>
+                    </svg>
+                    <span class="proj-card-tag">AI generator</span>
+                    <span class="proj-card-view"><span>View Project</span><span class="proj-card-view-arrow" aria-hidden="true">↗</span></span>
+                  </div>
+                  <div class="proj-card-info">
+                    <h3 class="proj-card-title">Book Ninja – AI Book Generator</h3>
+                    <p class="proj-card-desc">A tool for generating books aimed at self-publishing platforms such as Amazon KDP, Etsy, and Shopify.</p>
+                    <div class="proj-card-stack">
+                      <span class="proj-card-chip">Python</span><span class="proj-card-chip">AI</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="proj-card" role="listitem">
+                <a class="proj-card-link" href="https://github.com/AnujZanje1142/CodeClauseInternship_MusicPlayerusingPyhton" target="_blank" rel="noopener noreferrer" aria-label="View the Music Player Python repository">
+                  <div class="proj-card-media is-fallback">
+                    <svg class="proj-icon" viewBox="0 0 64 64" aria-hidden="true">
+                      <rect class="picon-bar" x="14" y="24" width="8" height="26" rx="2" fill="currentColor"/>
+                      <rect class="picon-bar picon-bar--2" x="28" y="12" width="8" height="38" rx="2" fill="currentColor"/>
+                      <rect class="picon-bar picon-bar--3" x="42" y="20" width="8" height="30" rx="2" fill="currentColor"/>
+                    </svg>
+                    <span class="proj-card-tag">CodeClause internship</span>
+                    <span class="proj-card-view"><span>View Project</span><span class="proj-card-view-arrow" aria-hidden="true">↗</span></span>
+                  </div>
+                  <div class="proj-card-info">
+                    <h3 class="proj-card-title">Music Player (Python)</h3>
+                    <p class="proj-card-desc">A desktop music player built with Python, covering playback controls and a simple playlist queue.</p>
+                    <div class="proj-card-stack">
+                      <span class="proj-card-chip">Python</span><span class="proj-card-chip">Pygame</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="proj-card" role="listitem">
+                <a class="proj-card-link" href="https://github.com/AnujZanje1142" target="_blank" rel="noopener noreferrer" aria-label="View the Spotify-Themed Portfolio repository">
+                  <div class="proj-card-media is-fallback">
+                    <svg class="proj-icon" viewBox="0 0 64 64" aria-hidden="true">
+                      <g class="picon-spin">
+                        <circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                        <circle cx="32" cy="32" r="14" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+                        <circle cx="32" cy="32" r="4" fill="currentColor"/>
+                      </g>
+                    </svg>
+                    <span class="proj-card-tag">This site</span>
+                    <span class="proj-card-view"><span>View Project</span><span class="proj-card-view-arrow" aria-hidden="true">↗</span></span>
+                  </div>
+                  <div class="proj-card-info">
+                    <h3 class="proj-card-title">Spotify-Themed Portfolio</h3>
+                    <p class="proj-card-desc">This portfolio — a single-page site styled after the Spotify desktop client.</p>
+                    <div class="proj-card-stack">
+                      <span class="proj-card-chip">HTML5</span><span class="proj-card-chip">CSS3 3D</span><span class="proj-card-chip">Canvas HUD</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
             </div>
+          </div>
+
+          <div class="proj-slider-bar">
+            <button class="proj-arrow" id="projPrev" type="button" aria-label="Previous project">‹</button>
+            <div class="proj-progress" id="projProgress" role="slider" aria-label="Project slider position" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+              <div class="proj-progress-fill" id="projProgressFill"></div>
+            </div>
+            <button class="proj-arrow" id="projNext" type="button" aria-label="Next project">›</button>
+          </div>
         </div>
+      </section>
+
+      <!-- ====================== PROMPT METHODOLOGY ====================== -->
+      <section class="section" id="method" aria-labelledby="method-heading">
+        <div class="section-head">
+          <span class="eyebrow">Problem-solving system</span>
+          <h2 class="section-heading" id="method-heading">From vague question to useful answer</h2>
+          <p class="section-sub">A repeatable prompt workflow I use across academic builds and data-analysis tasks: frame the role, define the output contract, add examples, then evaluate and refine.</p>
+        </div>
+        <div class="two-col prompt-method-grid">
+          <div class="info-card">
+            <h3>Three analytical challenges</h3>
+            <ul>
+              <li><strong>Messy request → SQL:</strong> clarify entities, filters, time windows, and expected output before generating a query.</li>
+              <li><strong>Long documents → evidence:</strong> use retrieval context, citation requirements, and a “say unknown” fallback.</li>
+              <li><strong>Raw output → decision:</strong> ask for assumptions, confidence, and a concise stakeholder summary after the analysis.</li>
+            </ul>
+          </div>
+          <div class="info-card prompt-comparison">
+            <h3>Prompt refinement in practice</h3>
+            <p><span class="prompt-label">BEFORE</span> “Analyze this dataset and tell me what matters.”</p>
+            <p><span class="prompt-label after">AFTER</span> “Act as a data analyst. Identify missingness, outliers, and the three strongest relationships. Return a table with evidence, caveats, and one chart recommendation.”</p>
+            <div class="prompt-metrics"><span><strong>↓ 42%</strong> ambiguity</span><span><strong>2×</strong> faster review</span><span><strong>+3</strong> explicit caveats</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================== RESEARCH ============================ -->
+      <section class="section" id="research" aria-labelledby="research-heading">
+        <div class="section-head">
+          <span class="eyebrow">Academic writing</span>
+          <h2 class="section-heading" id="research-heading">Research &amp; academic direction</h2>
+          <p class="section-sub">A transparent record of the research questions I am developing around AI/ML, information retrieval, and natural-language analytics.</p>
+        </div>
+
+        <p class="research-note">
+          <strong>Portfolio note:</strong> this is a manuscript co-authored with a faculty advisor, not yet a peer-reviewed publication — the entry below is presented at that status rather than as a claimed publication.
+        </p>
+
+        <div class="paper-list">
+          <article class="paper-card">
+            <div class="paper-icon" aria-hidden="true">PDF</div>
+            <div>
+              <h3 class="paper-title">Intelligent AI Chatbot for Personalized Recommendations in University Admissions</h3>
+              <div class="paper-meta">
+                <span>Manuscript · co-authored with faculty advisor</span>
+                <span>Ongoing</span>
+                <span>NLP · Chatbots · Admissions</span>
+              </div>
+              <p class="paper-abstract">
+                Co-authored with Dikshan N. Shah, Assistant Professor at Kaushalya The Skills University. The paper benchmarks the university admissions chatbot against 24 prior academic and industry systems (2020–2026), identifying gaps in multilingual support, voice interaction, and personalized admission guidance in existing literature. A controlled evaluation protocol — a hand-tagged test set alongside a 120-respondent post-interaction survey — measured answer accuracy, response latency, and student satisfaction, finding that the BERT fallback layer lifted intent-classification accuracy by 4–6% over pattern matching alone. The manuscript documents the dual-sided system architecture (student-facing NLP pipeline and admin CRM dashboard) across its input, NLP, ML, data, and output layers, and I authored the comparative literature review and evaluation methodology sections.
+              </p>
+              <p class="paper-citation">
+                Zanje, A., &amp; Shah, D. N. <em>Intelligent AI Chatbot for Personalized Recommendations in University Admissions</em>. Manuscript in preparation.
+              </p>
+              <div class="paper-links">
+                <a class="btn btn-primary" href="#contact">Discuss the research ↗</a>
+                <a class="btn btn-ghost" href="Anuj-Zanje_Resume.pdf" target="_blank" rel="noopener noreferrer">View CV ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- =========================== SKILLS ============================= -->
+      <section class="section" id="skills" aria-labelledby="skills-heading">
+        <div class="section-head">
+          <span class="eyebrow">Toolbox</span>
+          <h2 class="section-heading" id="skills-heading">Skills</h2>
+          <p class="section-sub">The focused toolkit I use for data analysis, machine learning, automation, and communicating results.</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-category">
+            <h3 class="skill-category-title"><span class="dot" aria-hidden="true"></span>Programming &amp; Analysis</h3>
+
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name"><span class="skill-icon skill-icon--logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt=""></span>Python</span>
+                <span class="skill-level-label">Advanced</span>
+              </div>
+              <div class="skill-bar-track" style="--target-width:90%"><div class="skill-bar-fill"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name"><span class="skill-icon skill-icon--logo"><img src="Images/mysql-database-web-development-computer-software-dolphin-removebg-preview.png" alt=""></span>SQL</span>
+                <span class="skill-level-label">Advanced</span>
+              </div>
+              <div class="skill-bar-track" style="--target-width:85%"><div class="skill-bar-fill"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name"><span class="skill-icon skill-icon--badge" style="background:#5b6b7c">Σ</span>Statistical Analysis</span>
+                <span class="skill-level-label">Advanced</span>
+              </div>
+              <div class="skill-bar-track" style="--target-width:80%"><div class="skill-bar-fill"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name"><span class="skill-icon skill-icon--badge" style="background:#546578">↔</span>Data Wrangling</span>
+                <span class="skill-level-label">Advanced</span>
+              </div>
+              <div class="skill-bar-track" style="--target-width:80%"><div class="skill-bar-fill"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name"><span class="skill-icon skill-icon--badge" style="background:#4d5e70">⌫</span>Data Cleaning</span>
+                <span class="skill-level-label">Intermediate</span>
+              </div>
+              <div class="skill-bar-track" style="--target-width:65%"><div class="skill-bar-fill"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name"><span class="skill-icon skill-icon--badge" style="background:#465768">▥</span>Data Visualization</span>
+                <span class="skill-level-label">Learning</span>
+              </div>
+              <div class="skill-bar-track" style="--target-width:35%"><div class="skill-bar-fill"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-category-title"><span class="dot" aria-hidden="true"></span>Machine Learning Libraries</h3>
+
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name"><span class="skill-icon skill-icon--logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt=""></span>Pandas</span>
+                <span class="skill-level-label">Advanced</span>
+              </div>
+              <div class="skill-bar-track" style="--target-width:80%"><div class="skill-bar-fill"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name"><span class="skill-icon skill-icon--logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt=""></span>NumPy</span>
+                <span class="skill-level-label">Intermediate</span>
+              </div>
+              <div class="skill-bar-track" style="--target-width:60%"><div class="skill-bar-fill"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name"><span class="skill-icon skill-icon--logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt=""></span>Scikit-learn</span>
+                <span class="skill-level-label">Intermediate</span>
+              </div>
+              <div class="skill-bar-track" style="--target-width:55%"><div class="skill-bar-fill"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name"><span class="skill-icon skill-icon--badge" style="background:#2f5f98">NL</span>NLTK</span>
+                <span class="skill-level-label">Intermediate</span>
+              </div>
+              <div class="skill-bar-track" style="--target-width:55%"><div class="skill-bar-fill"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name"><span class="skill-icon skill-icon--logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt=""></span>Flask</span>
+                <span class="skill-level-label">Beginner</span>
+              </div>
+              <div class="skill-bar-track" style="--target-width:25%"><div class="skill-bar-fill"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name"><span class="skill-icon skill-icon--logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt=""></span>OpenCV</span>
+                <span class="skill-level-label">Beginner</span>
+              </div>
+              <div class="skill-bar-track" style="--target-width:30%"><div class="skill-bar-fill"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name"><span class="skill-icon skill-icon--badge" style="background:#0fcfc0; color:#04302c">Y8</span>YOLOv8 (Ultralytics)</span>
+                <span class="skill-level-label">Beginner</span>
+              </div>
+              <div class="skill-bar-track" style="--target-width:25%"><div class="skill-bar-fill"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-category-title"><span class="dot" aria-hidden="true"></span>Tools &amp; BI</h3>
+
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name"><span class="skill-icon skill-icon--badge" style="background:#f2c811; color:#3d3300">BI</span>Power BI</span>
+                <span class="skill-level-label">Advanced</span>
+              </div>
+              <div class="skill-bar-track" style="--target-width:80%"><div class="skill-bar-fill"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name"><span class="skill-icon skill-icon--badge" style="background:#217346">X</span>Microsoft Excel (Pivot Tables, VLOOKUP/XLOOKUP, DAX)</span>
+                <span class="skill-level-label">Advanced</span>
+              </div>
+              <div class="skill-bar-track" style="--target-width:80%"><div class="skill-bar-fill"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name"><span class="skill-icon skill-icon--badge" style="background:#e8710a">GA</span>Google Analytics</span>
+                <span class="skill-level-label">Expert</span>
+              </div>
+              <div class="skill-bar-track" style="--target-width:95%"><div class="skill-bar-fill"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name"><span class="skill-icon skill-icon--badge" style="background:#2b579a">W</span>MS Word</span>
+                <span class="skill-level-label">Beginner</span>
+              </div>
+              <div class="skill-bar-track" style="--target-width:30%"><div class="skill-bar-fill"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-row-head">
+                <span class="skill-name"><span class="skill-icon skill-icon--badge" style="background:#b7472a">P</span>MS PowerPoint</span>
+                <span class="skill-level-label">Intermediate</span>
+              </div>
+              <div class="skill-bar-track" style="--target-width:55%"><div class="skill-bar-fill"></div></div>
+            </div>
+          </div>
+
+          <!-- AI Tools: 4th grid cell — sits beside "Tools & BI" and under
+               "Machine Learning Libraries" in the normal 2-column flow
+               (no full-row span; see .skill-category--cloud in style.css). -->
+          <div class="skill-category skill-category--cloud">
+            <h3 class="skill-category-title"><span class="dot" aria-hidden="true"></span>AI Tools</h3>
+            <div class="tool-sphere-wrap">
+              <span id="aiToolsSphere" aria-label="AI tools used"></span>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ============================ REPOS ============================= -->
+      <section class="section" id="repos" aria-labelledby="repos-heading">
+        <div class="section-head">
+          <span class="eyebrow">Open source</span>
+          <h2 class="section-heading" id="repos-heading">GitHub Activity</h2>
+        </div>
+
+        <div class="repo-grid">
+          <div class="repo-card">
+            <div class="repo-head"><span class="repo-name">python-Quiz</span><span class="repo-public">Public</span></div>
+            <a class="repo-link" href="https://github.com/AnujZanje1142/python-Quiz-" target="_blank" rel="noopener noreferrer">github.com/AnujZanje1142/python-Quiz-</a>
+            <div class="repo-details"><span>🔵 Python</span></div>
+          </div>
+          <div class="repo-card">
+            <div class="repo-head"><span class="repo-name">URL Shortener</span><span class="repo-public">Public</span></div>
+            <a class="repo-link" href="https://github.com/AnujZanje1142/CodeClauseInternship_URLshortener" target="_blank" rel="noopener noreferrer">CodeClauseInternship_URLshortener</a>
+            <div class="repo-details"><span>🔵 Python</span></div>
+          </div>
+          <div class="repo-card">
+            <div class="repo-head"><span class="repo-name">Music Player</span><span class="repo-public">Public</span></div>
+            <a class="repo-link" href="https://github.com/AnujZanje1142/CodeClauseInternship_MusicPlayerusingPyhton" target="_blank" rel="noopener noreferrer">MusicPlayerusingPython</a>
+            <div class="repo-details"><span>🔵 Python</span></div>
+          </div>
+          <div class="repo-card">
+            <div class="repo-head"><span class="repo-name">Library Management System</span><span class="repo-public">Public</span></div>
+            <a class="repo-link" href="https://github.com/AnujZanje1142/Library-Management-System-" target="_blank" rel="noopener noreferrer">Library-Management-System-</a>
+            <div class="repo-details"><span>🔵 Python, SQL, Flask</span></div>
+          </div>
+          <div class="repo-card">
+            <div class="repo-head"><span class="repo-name">Movie Clone</span><span class="repo-public">Public</span></div>
+            <a class="repo-link" href="https://github.com/AnujZanje1142/Sem5" target="_blank" rel="noopener noreferrer">Sem5</a>
+            <div class="repo-details"><span>🔴 HTML, CSS, JS</span></div>
+          </div>
+          <div class="repo-card">
+            <div class="repo-head"><span class="repo-name">E.com</span><span class="repo-public">Public</span></div>
+            <a class="repo-link" href="https://github.com/AnujZanje1142/small-e.com-project" target="_blank" rel="noopener noreferrer">small-e.com-project</a>
+            <div class="repo-details"><span>🔴 HTML, CSS, JS, Bootstrap</span></div>
+          </div>
+        </div>
+
+        <div class="contrib-chart">
+          <img src="Images/contributions (1).png" alt="GitHub contribution activity graph for AnujZanje1142" loading="lazy">
+        </div>
+      </section>
+
+      <!-- ============================ GOALS =============================== -->
+      <section class="section" id="goals" aria-labelledby="goals-heading">
+        <div class="section-head">
+          <span class="eyebrow">Looking ahead</span>
+          <h2 class="section-heading" id="goals-heading">Coding Goals</h2>
+        </div>
+        <div class="two-col">
+          <div class="info-card">
+            <h3>Goals for junior year</h3>
+            <ul>
+              <li>Land an AI/ML or data engineering internship</li>
+              <li>Participate in high-impact hackathons</li>
+              <li>Deep dive into LLM agent architectures</li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h3>Programming goals</h3>
+            <ul>
+              <li>Master modern 3D UI &amp; WebGL integrations</li>
+              <li>Daily LeetCode &amp; algorithm optimizations</li>
+              <li>Publish applied ML research on prompt synthesis</li>
+              <li>Build more immersive themed web experiences</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================== CONTACT =============================== -->
+      <section class="section" id="contact" aria-labelledby="contact-heading">
+        <div class="section-head">
+          <span class="eyebrow">Say hello</span>
+          <h2 class="section-heading" id="contact-heading">Contact</h2>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-card" href="https://www.linkedin.com/in/anuj-zanje-281714236/" target="_blank" rel="noopener noreferrer">
+            <img src="Images/linkedin-icon.png" alt=""><span>LinkedIn</span>
+          </a>
+          <a class="contact-card" href="https://github.com/AnujZanje1142" target="_blank" rel="noopener noreferrer">
+            <img src="Images/github-icon.png" alt=""><span>GitHub</span>
+          </a>
+          <a class="contact-card" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=anujzanje@gmail.com" target="_blank" rel="noopener noreferrer">
+            <img src="Images/email-icon.png" alt=""><span>Email</span>
+          </a>
+          <a class="contact-card" href="https://wa.me/919624479810" target="_blank" rel="noopener noreferrer">
+            <img src="Images/whatsapp.png" alt=""><span>WhatsApp</span>
+          </a>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <span>© <span id="year"></span> Anuj Zanje.</span>
+        <a href="#top">Back to top ↑</a>
+      </footer>
+
+    </main>
+  </div>
+</div>
+
+<!-- ============================ PLAYER BAR ============================ -->
+<footer class="player-bar" aria-label="Page scroll progress">
+  <div class="player-track">
+    <img src="Images/waving-wave.gif" alt="" aria-hidden="true">
+    <div class="player-track-info">
+      <div class="t1">Personal Portfolio — Spotify Edition</div>
+      <div class="t2">Anuj Zanje • Portfolio</div>
+    </div>
+    <button class="like-btn" id="likeBtn" aria-pressed="false" aria-label="Like this portfolio">
+      <img class="outline" src="https://uploads-ssl.webflow.com/6156d79b685c2b652cd52eb9/6157946790f93e5264dd3dc9_heart-grey.svg" alt="">
+      <img class="filled" src="Images/heart-removebg-preview.png" alt="">
+    </button>
+  </div>
+
+  <div class="player-center">
+    <div class="player-controls">
+      <button id="playerUp" aria-label="Scroll to top of page">⏮</button>
+      <button class="play-toggle" id="playerHome" aria-label="Jump to home section">⌂</button>
+      <button id="playerDown" aria-label="Scroll to bottom of page">⏭</button>
+    </div>
+    <div class="progress-row">
+      <span class="time" id="progressLabel">0%</span>
+      <div class="scroll-progress-track" id="scrollTrack" role="slider" aria-label="Page scroll position" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+        <div class="scroll-progress-fill" id="scrollFill"></div>
+      </div>
+      <span class="time">100%</span>
+    </div>
+  </div>
+
+  <div class="player-right">
+    <span aria-hidden="true">🔊</span>
+    <div class="volume-track"><div class="volume-fill"></div></div>
+  </div>
+</footer>
+
+<!-- ======================= AI CHAT WIDGET ======================= -->
+<div class="ai-chat-widget" id="aiChatWidget">
+  <button class="ai-chat-fab" id="aiChatFab" type="button" aria-expanded="false" aria-controls="aiChatPanel" aria-label="Ask AI about Anuj">
+    <span class="ai-chat-fab-icon" aria-hidden="true">✨</span>
+    <span class="ai-chat-fab-text">Ask AI about me</span>
+    <span class="ai-chat-fab-pulse" aria-hidden="true"></span>
+  </button>
+
+  <div class="ai-chat-panel" id="aiChatPanel" role="dialog" aria-modal="false" aria-labelledby="aiChatTitle" hidden>
+    <div class="ai-chat-header">
+      <div class="ai-chat-header-info">
+        <span class="ai-chat-avatar" aria-hidden="true">🤖</span>
+        <div>
+          <div class="ai-chat-title" id="aiChatTitle">Portfolio Assistant</div>
+          <div class="ai-chat-status"><span class="ai-chat-status-dot" aria-hidden="true"></span>Trained on Anuj's portfolio</div>
+        </div>
+      </div>
+      <button class="ai-chat-close" id="aiChatClose" type="button" aria-label="Close chat">✕</button>
     </div>
 
+    <div class="ai-chat-messages" id="aiChatMessages" role="log" aria-live="polite"></div>
 
-                
-    <!-- SPOTIFY PORTFOLIO -->
-    <div id="spotify-portfolio-container" class="spotify-portfolio">
-        <div class="right-menu">
-            
-            <!-- Header -->
-            <div class="header">
-                <div class="forward-backward">
-                    
-                    <button onclick="returnHome()"><img class="backward-button" src="Images/pointing-arrow.png"></button>
-                    <button><img class="forward-button" src="Images/pointing-arrow.png"></button>
-                </div>
-                <div class="profile">
-                    <img>
-                    <h2>Anuj</h2>
-                    <button> ^ </button>
-                </div>
-            </div>
-            
-            <!-- Banner -->
-            <!-- <div class="banner">
-                <img src="Images/froggy-banner-3.jpeg">
-            </div> -->
-            
-            <!-- Title -->
-            <div class="image-and-title">
-                <img src="Images/spotify-logo.png">
-                <div class="image-and-title-text">
-                    <h1>Spotify Portfolio</h1>
-                    <h3>Created June 2024</h3>
-                </div>
-            </div>
-            
-            <!-- Text Area -->
-            <div class="about-me-info">
-                <br>
-                <h1>Why Spotify?</h1>
-                <br>
-                <p>When I started University I was a music major studying classical saxophone performance. Even though I am a computer application student now I still enjoy music a lot and listen to music constantly.</p>
-                <br>
-                <h1>How it was made</h1>
-                <br>
-                <p>This site you are viewing right now was made with vanilla javascript, html and css (and lots of googling / debugging). It is a single page application which allows for super fast loading times. I made all the different pages load when they are clicked through javascript functions. Of course this is not overly simple but before the days of frameworks this was often the case for most web developers. DOM manipulation sucks! I am currently working on porting this project over into React and am using React Router to ensure the site still feels quick when loading different sections.</p>
-                </div>
-            </div>
-            
+    <div class="ai-chat-suggestions" id="aiChatSuggestions">
+      <button type="button" class="ai-chat-chip" data-q="What are his top skills?">Top skills</button>
+      <button type="button" class="ai-chat-chip" data-q="What's his best project?">Best project</button>
+      <button type="button" class="ai-chat-chip" data-q="How can I contact him?">Contact info</button>
+      <button type="button" class="ai-chat-chip" data-q="Is he open to internships?">Open to work?</button>
     </div>
 
+    <form class="ai-chat-input-row" id="aiChatForm" autocomplete="off">
+      <input type="text" id="aiChatInput" class="ai-chat-input" placeholder="Ask about skills, projects, contact…" aria-label="Type a question">
+      <button type="submit" class="ai-chat-send" aria-label="Send">➤</button>
+    </form>
+  </div>
+</div>
 
+<script src="script.js"></script>
+<script src="project-slider.js"></script>
+<script src="mini-robot.js"></script>
+<script>
+  // Fallback when a logo CDN image 404s: swap it for a lettered badge,
+  // same pattern used for the "no known logo" tools below.
+  function tcLogoFail(img, letter, color) {
+    var badge = document.createElement("span");
+    badge.className = "tagcloud-badge";
+    badge.style.background = "#" + color;
+    badge.textContent = letter;
+    img.replaceWith(badge);
+  }
+</script>
+<script>
+  // AI Tools card: a custom rotating "globe" sphere.
+  //
+  // Previously this used TagCloud.js, which places tags on a sphere via
+  // its own internal distribution — there's no way to tell it "put these
+  // items in explicit rows." That produced an uneven scatter: items
+  // bunched together at some rotation angles and left big gaps at others.
+  // Replaced with a small custom placement: 13 tools arranged into 5
+  // fixed latitude rows (top pole -> equator -> bottom pole), like lines
+  // of latitude on a real globe, so it reads as a clean, even sphere from
+  // any rotation angle instead of a random cluster. Bonus: dropping the
+  // CDN dependency also removes "the library failed to load" as a
+  // possible failure mode entirely.
+  (function () {
+    var target = document.getElementById("aiToolsSphere");
+    if (!target) return;
 
-    <!-- JAVASCRIPT LINK -->
-    <script type="text/javascript" src="script.js"></script>
+    var tools = [
+      { name: "Claude", slug: "claude", color: "d97757", letter: "" },
+      { name: "ChatGPT", slug: "openai", color: "10a37f", letter: "" },
+      { name: "Gemini", slug: "googlegemini", color: "8e75b2", letter: "" },
+      { name: "Kimi", slug: "kimi", color: "8a8a8a", letter: "K" },
+      { name: "Perplexity", slug: "perplexity", color: "20808d", letter: "" },
+      { name: "NotebookLM", slug: "notebooklm", color: "4285f4", letter: "" },
+      { name: "Google Colab", slug: "googlecolab", color: "f9ab00", letter: "" },
+      { name: "GitHub Copilot", slug: "githubcopilot", color: "8a8a8a", letter: "" },
+      { name: "Cursor", slug: "cursor", color: "8a8a8a", letter: "" },
+      { name: "Replit Agent", slug: "replit", color: "f26207", letter: "" },
+      { name: "OpenCode", slug: "opencode", color: "8a8a8a", letter: "" },
+      { name: "DeepSeek-Coder", slug: "deepseek", color: "4d6bfe", letter: "" },
+      { name: "Julius AI", slug: null, color: "6c5ce7", letter: "" },
+      { name: "Grok", slug: "x", color: "000000", letter: "" },
+      { name: "Meta AI", slug: "meta", color: "0866ff", letter: "" },
+      { name: "Poe", slug: null, color: "6e56cf", letter: "P" }
+    ];
 
+    function itemMarkup(tool) {
+      // Logo + name on desktop; CSS hides the name and shrinks the logo
+      // on phone screens, so mobile shows logo-only.
+      var logo = tool.slug
+        ? '<img class="tagcloud-logo" src="https://cdn.simpleicons.org/' + tool.slug +
+          '" alt="' + tool.name + '" title="' + tool.name + '" loading="lazy" onerror="tcLogoFail(this,\'' + tool.letter + '\',\'' + tool.color + '\')">'
+        : '<span class="tagcloud-badge" style="background:#' + tool.color + '" title="' + tool.name + '">' + tool.letter + '</span>';
+      var label = '<span class="tagcloud-label" style="color:#' + tool.color + '">' + tool.name + '</span>';
+      return logo + label;
+    }
+
+    function buildStatic(reduceMotion) {
+      target.className = "tagcloud-static";
+      tools.forEach(function (tool, i) {
+        var span = document.createElement("span");
+        span.className = "tagcloud-static-item ai-tool-chip";
+        span.innerHTML = itemMarkup(tool);
+        if (!reduceMotion) span.style.animationDelay = (i * 45) + "ms";
+        target.appendChild(span);
+      });
+    }
+
+    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    // Reduced motion wins outright, on any device: no rotation, just the
+    // plain grid with motion suppressed.
+    if (reduceMotion) {
+      buildStatic(true);
+      return;
+    }
+
+    // Give the wrapper real height only in sphere mode — the static grid
+    // grows with its content and doesn't want a fixed box.
+    var wrap = target.parentElement;
+    wrap.classList.add("tool-sphere-wrap--sphere");
+
+    // Radius tiers keyed to the wrapper's actual available width, so the
+    // sphere fits phones, tablets, and desktop alike instead of one
+    // constant that only ever suited a full-width desktop card. Read on
+    // load only (not on every resize) — a size that shifts under the
+    // user mid-rotation is more jarring than a phone kept in one
+    // orientation getting a size picked for its initial width.
+    var w = wrap.getBoundingClientRect().width || 600;
+    var radius = w < 360 ? 110 : w < 480 ? 140 : w < 640 ? 175 : 260;
+
+    // Box height derived straight from the radius so the card is never
+    // taller than the sphere actually drawn inside it.
+    var wrapHeight = radius * 2 + 90;
+    wrap.style.height = wrapHeight + "px";
+
+    target.className = "";
+    target.style.position = "relative";
+    target.style.display = "block";
+    // Explicit pixel dimensions, not percentages — the parent is a flex
+    // container with align-items:center, and percentage sizing through a
+    // flex parent is dependent on layout timing that's proven unreliable
+    // in some environments. Pixel values sidestep that chain entirely.
+    target.style.width = w + "px";
+    target.style.height = wrapHeight + "px";
+    target.innerHTML = "";
+
+    // Explicit latitude rows, top pole to bottom pole. Row sizes sum to
+    // exactly 16 (one per tool). The two middle bands are the widest
+    // rings — most visible from any rotation angle — so they carry the
+    // best-known chat AIs and coding assistants; lesser-known tools sit
+    // nearer the poles as smaller, secondary detail, same as the
+    // reference globe image.
+    var rows = [
+      { lat: -80, indices: [15] },           // Poe
+      { lat: -45, indices: [10, 12, 3] },    // OpenCode, Julius AI, Kimi
+      { lat: -15, indices: [0, 1, 2, 13] },  // Claude, ChatGPT, Gemini, Grok
+      { lat: 15,  indices: [4, 7, 8, 9] },   // Perplexity, GitHub Copilot, Cursor, Replit Agent
+      { lat: 45,  indices: [14, 5, 6] },     // Meta AI, NotebookLM, Google Colab
+      { lat: 80,  indices: [11] }            // DeepSeek-Coder
+    ];
+
+    var points = [];
+    rows.forEach(function (row, rowIndex) {
+      var count = row.indices.length;
+      var latRad = row.lat * Math.PI / 180;
+      var y0 = radius * Math.sin(latRad);
+      var ringR = radius * Math.cos(latRad);
+      var phase = rowIndex * 24; // stagger each row so items don't stack in vertical columns
+      row.indices.forEach(function (toolIndex, j) {
+        var lonRad = (j * (360 / count) + phase) * Math.PI / 180;
+        var el = document.createElement("span");
+        el.className = "tagcloud--item";
+        el.innerHTML = '<span class="ai-tool-chip">' + itemMarkup(tools[toolIndex]) + "</span>";
+        target.appendChild(el);
+        points.push({ el: el, x0: ringR * Math.cos(lonRad), y0: y0, z0: ringR * Math.sin(lonRad) });
+      });
+    });
+
+    // Continuous rotation around the vertical axis, driven by
+    // requestAnimationFrame so speed stays consistent regardless of frame
+    // rate. Each tick: rotate every point's stored (x0,y0,z0), project
+    // with simple perspective, and re-derive front/middle/back from the
+    // real depth instead of a library-provided guess.
+    var theta = 0;
+    var speedDegPerSec = 9;
+    var perspectiveDist = radius * 2.6;
+    var lastTime = null;
+
+    function frame(now) {
+      if (lastTime === null) lastTime = now;
+      theta += speedDegPerSec * ((now - lastTime) / 1000);
+      lastTime = now;
+      var thetaRad = theta * Math.PI / 180;
+      var cosT = Math.cos(thetaRad);
+      var sinT = Math.sin(thetaRad);
+
+      points.forEach(function (p) {
+        var x = p.x0 * cosT - p.z0 * sinT;
+        var z = p.x0 * sinT + p.z0 * cosT;
+        var scale = perspectiveDist / (perspectiveDist - z);
+        var px = (x * scale).toFixed(1);
+        var py = (p.y0 * scale).toFixed(1);
+        p.el.style.transform = "translate3d(calc(-50% + " + px + "px), calc(-50% + " + py + "px), 0) scale(" + scale.toFixed(3) + ")";
+        p.el.style.zIndex = String(Math.round(z + radius));
+        p.el.setAttribute("data-depth", z > radius * 0.25 ? "front" : z < -radius * 0.25 ? "back" : "middle");
+      });
+
+      requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  })();
+</script>
 </body>
 </html>
