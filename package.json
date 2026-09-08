@@ -1,0 +1,15 @@
+{
+  "name": "anuj-portfolio",
+  "version": "1.0.0",
+  "description": "Anuj Zanje's portfolio website",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": ["portfolio"],
+  "author": "Anuj Zanje",
+  "license": "MIT",
+  "devDependencies": {
+    "@vercel/analytics": "^1.1.1"
+  }
+}
